@@ -5,7 +5,7 @@ import Title from "../components/Title.tsx"
 function Techstack({ }) {
     return (
         <>
-            <div className="center">
+            <div className="center" id="skills">
                 <Title
                     title="Tech Stack (Upgrading)"
                 />

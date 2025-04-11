@@ -5,7 +5,7 @@ import Card from "../components/Card.tsx";
 function Contests() {
   return (
     <>
-        <div className="center">
+        <div className="center" id="contests">
             <Title
                 title="Contests"
             />

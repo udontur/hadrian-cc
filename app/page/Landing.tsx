@@ -22,7 +22,7 @@ function Landing({ }) {
         updateName();
     }, []);
     return (
-        <div className="landing">
+        <div className="landing" id="home">
             <div className="intro">
                 <div className="hello">
                     <span>H</span>

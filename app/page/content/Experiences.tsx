@@ -4,7 +4,7 @@ import Card from "../components/Card.tsx";
 
 function Experiences() {
   return (
-    <div className="center">
+    <div className="center" id="experience">
         <Title
             title="Valuable Experiences"
         />
