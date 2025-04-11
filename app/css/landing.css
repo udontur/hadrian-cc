@@ -1,11 +1,13 @@
 .name {
     font-size: 128px;
-    margin-top: -48px;
-    margin-bottom: -48px;
+    margin-top: -50px;
+    margin-bottom: -38px;
     margin-left: -4px;
     font-weight: 600;
     color: #a1e754;
-    text-shadow: 0px 0px 8px #a1e754;
+    text-shadow: 0px 0px 12px #a1e754;
+    font-family: "Shantell Sans" !important;
+    font-weight: 600;
 }
 
 .profile-pic {
