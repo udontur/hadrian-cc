@@ -12,7 +12,7 @@ function Experiences() {
             image="/img/chonglap.png"
             title="Front-End Web Developer (Student)"
             place="@Chong Lap (H.K.) Co. Ltd."
-            desc="Developed chonglap.com with the IT team."
+            desc="Developed hk.chonglap.com with the IT team."
             sub="Onsite and Remote"
             date="Feb 2025 - Mar 2025 • 2 Months"
         />
