@@ -1,4 +1,4 @@
-import React from 'react';
+
 //import './General.css';
 
 export default function Cardcon({ image, title, place, desc, rank, date }: any) {

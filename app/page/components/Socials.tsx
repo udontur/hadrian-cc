@@ -1,4 +1,4 @@
-import React from 'react';
+
 //import './General.css';
 
 function Socials({ link, svg }: any) {

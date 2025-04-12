@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Cardtech from "../components/Cardtech.tsx"
 import Title from "../components/Title.tsx"
 

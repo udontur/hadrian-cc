@@ -1,5 +1,5 @@
 // Add id =projects
-import React from 'react';
+
 import Title from '../components/Title.tsx';
 import Cardpro from "../components/Cardpro.tsx";
 

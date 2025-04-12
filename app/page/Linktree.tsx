@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Socials from "./components/Socials.tsx"
 
 function Linktree() {

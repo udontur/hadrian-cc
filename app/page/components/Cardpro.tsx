@@ -1,4 +1,4 @@
-import React from 'react';
+
 //import './General.css';
 
 export default function Cardpro({ image, title, desc, source, demo, tech, date }: any) {

@@ -1,4 +1,4 @@
-import React from 'react';
+
 //import './General.css';
 
 export default function Cardexp({ image, title, place, desc, link, linktxt, sub, date }: any) {

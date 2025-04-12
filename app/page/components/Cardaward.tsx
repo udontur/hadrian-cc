@@ -1,4 +1,4 @@
-import React from 'react';
+
 //import './General.css';
 
 export default function Cardaward({ image, title, diploma, award1, award2, date }: any) {
