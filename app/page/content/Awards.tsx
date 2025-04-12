@@ -7,7 +7,7 @@ export default function Awards() {
     <>
         <div className="center">
             <Title
-                title="Valuable Experiences"
+                title="Education & Awards"
             />
             <Cardaward
                 image="/img/dsc.png"
