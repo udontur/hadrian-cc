@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import "tailwindcss";
 @import "./css/font.css";
 @import "./css/grid.css";
@@ -7,6 +6,8 @@
 @import "./css/landing.css";
 @import "./css/linktree.css";
 @import "./css/card.css";
+@import "./css/divider.css";
+@import "./css/footer.css";
 /* 
 :root {
   --background: #ffffff;

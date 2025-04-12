@@ -4,8 +4,12 @@ function Footer() {
   return (
     <>
         <footer>
-            <div className="m-128"></div>
-         </footer>
+            <div className="container-line">
+                <div>
+                   
+                </div>
+            </div>
+        </footer>
     </>
   );
 }
