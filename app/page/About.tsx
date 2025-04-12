@@ -1,6 +1,6 @@
 import React from 'react';
 import Title from './components/Title.tsx';
-import Card from "./components/Card.tsx";
+import Card from "./components/Cardcon.tsx";
 
 function Experiences() {
   return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import Title from '../components/Title.tsx';
-import Card from "../components/Card.tsx";
+import Cardexp from "../components/Cardexp.tsx";
 
 function Experiences() {
   return (
@@ -8,19 +8,23 @@ function Experiences() {
         <Title
             title="Valuable Experiences"
         />
-        <Card
+        <Cardexp
             image="/img/chonglap.png"
             title="Front-End Web Developer (Student)"
             place="@Chong Lap (H.K.) Co. Ltd."
-            desc="Developed hk.chonglap.com with the IT team."
+            desc="Developed the company website with the IT team"
+            link="https://hk.chonglap.com"
+            linktxt="chonglap.com"
             sub="Onsite and Remote"
             date="Feb 2025 - Mar 2025 • 2 Months"
         />
-        <Card
+        <Cardexp
             image="/img/elevate-logo.png"
             title="Website Revamp (Student)"
             place="@Elevate Global Education Group Limited"
-            desc="Develop elevate-educate.net for a small business in Hong Kong."
+            desc="Revamp a small business' website"
+            link="https://elevate-educate.net"
+            linktxt="elevate-educate.net"
             sub="Remote"
             date="Dec 2024 - Jan 2025 • 1 Month"
         />

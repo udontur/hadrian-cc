@@ -51,10 +51,16 @@
     font-size: 48px;
     text-align: center;
     font-weight: 700;
-    margin-top: 72px;
+    margin-top: 96px;
     margin-bottom: 12px;
 }
 .skills-dev{
     width: fit-content;
     height: 64px;
+}
+.skills-used{
+    width: fit-content;
+    height: 16px;
+    margin-top: 4px;
+    margin-bottom: 2px;
 }

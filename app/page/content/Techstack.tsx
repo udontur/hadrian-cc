@@ -15,10 +15,10 @@ function Techstack({ }) {
                 />
                 <Cardtech
                     title="Tools & Technologies"
-                    icons="https://skillicons.dev/icons?i=linux,nix,git,github,figma"
+                    icons="https://skillicons.dev/icons?i=linux,nix,git,github,vercel,figma"
                 />
                 <Cardtech
-                    title="Skills I want to learn"
+                    title="Tech Skills I want to learn"
                     icons="https://skillicons.dev/icons?i=docker,ts,nodejs,nextjs,mongodb,postgres,graphql,electron,bash"
                 />
             </div>
