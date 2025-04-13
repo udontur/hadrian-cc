@@ -15,7 +15,9 @@ export default function Contact(){
                 <div className="con-email" id="contact">
                     <div className="email">contact@hadrian.cc</div>
                     <div className="methods">
-                        <button className="send">Send</button>
+                        <button className="send">
+                            <a href="mailto:contact@hadrian.cc">Send</a>
+                        </button>
                         <button 
                             onClick={async ()=>{
                                 await navigator.clipboard.writeText("contact@hadrian.cc");
