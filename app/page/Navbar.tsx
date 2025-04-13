@@ -122,11 +122,12 @@ m18248 230 c139 -589 197 -1221 212 -2303 7 -480 1 -556 -50 -582 -25 -12
                     </button>
                 </a>
                 <li>
-                    <ul><a href="#">Home</a></ul>
+                    
                     <ul><a href="#experience">Experience</a></ul>
                     <ul><a href="#contests">Contests</a></ul>
                     <ul><a href="#projects">Projects</a></ul>
                     <ul><a href="#skills">Skills</a></ul>
+                    <ul><a href="#contact">Contact</a></ul>
                 </li>
             </div>
         </>

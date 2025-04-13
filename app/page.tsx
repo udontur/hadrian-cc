@@ -6,6 +6,7 @@ import Techstack from "./page/content/Techstack.tsx";
 import Experiences from './page/content/Experiences.tsx';
 import Projects from "./page/content/Projects.tsx";
 import Awards from "./page/content/Awards.tsx";
+import Contact from "./page/content/Contact.tsx";
 
 // Website
 import Navbar from "./page/Navbar.tsx";
@@ -16,6 +17,8 @@ import Divider from "./page/Divider.tsx";
 // Vercel
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+
+import "./globals.css";
 
 export default function Home() {
   return (
@@ -38,6 +41,7 @@ export default function Home() {
                 <Hardskill/> (Replace tech stack?)
                 */}
                 <Awards/>
+                <Contact/>
                 {/* contactme */}
             </div>
             <div className="m-32"></div>
