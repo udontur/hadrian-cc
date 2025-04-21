@@ -39,7 +39,7 @@ function Landing({ }) {
                     <span>m</span> */}
                 </div>
                 <div className="name">{name}</div>
-                <div className="funny-quote">Self-taught Developer in Development
+                <div className="funny-quote">Passionate Self-taught Developer in Development
                 </div>
             </div>
             <img className="profile-pic" src="/img/udontur1000-transparent.png" alt="My usual profil picture"/>

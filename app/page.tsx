@@ -23,7 +23,7 @@ import "./globals.css";
 export default function Home() {
   return (
     <>
-    
+        <meta name="viewport" content="width=1920"/>
         <Navbar/>
         <Empty/>
         <main>
@@ -34,10 +34,11 @@ export default function Home() {
             <div>
                 <Experiences/>
                 <Contests/>
-                <Projects/> {/* Different structure? */}
+                <Projects/> {/* Different structure? v3 */}
                 <Techstack/>
-                {/* 
-                <Softskill/>                                                                                                                  
+                {/* v3
+                <Softskill/>                                                                                                                  https://docs.google.com/spreadsheets/d/1Bkowf7nFh9SGMkJsDxa_5fZ2fzpaSVcksXklhdGuNiM/edit?gid=0#gid=0
+                
                 <Hardskill/> (Replace tech stack?)
                 */}
                 <Awards/>
