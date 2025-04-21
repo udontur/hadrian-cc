@@ -37,20 +37,21 @@ export default function Home() {
                 <Projects/> {/* Different structure? */}
                 <Techstack/>
                 {/* 
-                <Softskill/>
+                <Softskill/>                                                                                                                  
                 <Hardskill/> (Replace tech stack?)
                 */}
                 <Awards/>
-                <Contact/>
-                {/* contactme */}
             </div>
+            <div className="m-32"></div>
+            <Divider/>
+
+            <Contact/>
             <div className="m-32"></div>
             {/* <Divider/> */}
         </main>
         <Empty/>
         <Footer/>
 
-        {/* Vercel */}
         <Analytics/>
         <SpeedInsights/>
     </>
