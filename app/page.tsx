@@ -17,13 +17,16 @@ import Divider from "./page/Divider.tsx";
 // Vercel
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import Head from 'next/head'
 
 import "./globals.css";
 
 export default function Home() {
   return (
     <>
-        <meta name="viewport" content="width=1920"/>
+        <Head>
+            <meta name="viewport" content="width=1920"/>
+        </Head>
         <Navbar/>
         <Empty/>
         <main>
