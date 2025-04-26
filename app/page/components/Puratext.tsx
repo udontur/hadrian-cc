@@ -6,7 +6,7 @@ export default function Cardaward({text }: any) {
         <>
             <div className="center">
                 <div className="con-email">
-                    <div>
+                    <div className="puratext">
                         {text}
                     </div>
                 </div>

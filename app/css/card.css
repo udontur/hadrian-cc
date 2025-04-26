@@ -67,3 +67,7 @@
 .high{
     color: #a1e754
 }
+.puratext{
+    text-align: justify;
+    text-justify: inter-word;
+}
