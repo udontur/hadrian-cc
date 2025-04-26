@@ -2,11 +2,8 @@ function Footer() {
   return (
     <>
         <footer>
-            <div className="container-line">
-                <div>
-                   
-                </div>
-            </div>
+            <div className="left-footer">Made with passion by Hadrian</div>
+            <div className="right-footer"></div>
         </footer>
     </>
   );

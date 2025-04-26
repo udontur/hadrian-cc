@@ -13,6 +13,7 @@ import Navbar from "./page/Navbar.tsx";
 import Footer from "./page/Footer.tsx";
 import Empty from "./page/Empty.tsx";
 import Divider from "./page/Divider.tsx";
+import About from "./page/About.tsx"
 
 // Vercel
 import { Analytics } from "@vercel/analytics/react";
@@ -24,15 +25,13 @@ import "./globals.css";
 export default function Home() {
   return (
     <>
-        <Head>
-            <meta name="viewport" content="width=1920"/>
-        </Head>
         <Navbar/>
         <Empty/>
         <main>
             <Landing/>
             <Linktree/>
-            {/* <Aboutpage/> */}
+            <About/>
+            <div className="m-32"></div>
             <Divider/>
             <div>
                 <Experiences/>
@@ -50,7 +49,7 @@ export default function Home() {
             <Divider/>
 
             <Contact/>
-            <div className="m-32"></div>
+            <div className="m-48"></div>
             {/* <Divider/> */}
         </main>
         <Empty/>

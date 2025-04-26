@@ -9,21 +9,26 @@ export default function Contact(){
     return (
         <>
             <Title
-                title="Contact Me"
+                title="Let's Get in Touch"
             />
             <div className="center">
                 <div className="con-email" id="contact">
                     <div className="email">contact@hadrian.cc</div>
-                    <div className="methods">
-                        <button className="send">
-                            <a href="mailto:contact@hadrian.cc">Send</a>
-                        </button>
-                        <button 
-                            onClick={async ()=>{
-                                await navigator.clipboard.writeText("contact@hadrian.cc");
-                                setCopyState("Copied ✓");
-                            }}
-                        >{copyState}</button>
+                    <div className="bottom-sec">
+                        <div className="reply-time">
+                            Reply within 24 hours (I would love to chat in real life too)
+                        </div>
+                        <div className="methods">
+                            <button className="send">
+                                <a href="mailto:contact@hadrian.cc">Send</a>
+                            </button>
+                            <button 
+                                onClick={async ()=>{
+                                    await navigator.clipboard.writeText("contact@hadrian.cc");
+                                    setCopyState("Copied ✓");
+                                }}
+                            >{copyState}</button>
+                        </div>
                     </div>
                 </div>
             </div>

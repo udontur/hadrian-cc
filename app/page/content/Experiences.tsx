@@ -20,7 +20,7 @@ function Experiences() {
         />
         <Cardexp
             image="/img/elevate-logo.png"
-            title="Website Revamp (Student)"
+            title="Website Revamp"
             place="@Elevate Global Education Group Limited"
             desc="Revamp a small business' website"
             link="https://elevate-educate.net"

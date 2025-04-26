@@ -1,6 +1,5 @@
-.container-line{
-    width: 100%;
-    border-top: 1px solid #3D3D3D;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px -5px 8px 0px;
-    margin-top: 64px;
+.left-footer{
+    margin-left: 16px;
+    margin-bottom: 8px;
+    color: #979797;
 }

@@ -1,31 +1,16 @@
 
 import Title from './components/Title.tsx';
-import Card from "./components/Cardcon.tsx";
+import Puratext from "./components/Puratext.tsx"
 
-function Experiences() {
+export default function About() {
   return (
     <>
         <Title
-            title="Valuable Experiences"
+            title="The very looooong About Me!"
         />
-        <Card
-            image="/img/chonglap.png"
-            title="Front-End Web Developer"
-            place="@Chong Lap (H.K.) Co. Ltd."
-            desc="Developed chonglap.com with the IT team."
-            sub="Onsite and Remote"
-            date="Feb 2025 - Mar 2025 • 2 Months"
-        />
-        <Card
-            image="/img/elevate-logo.png"
-            title="Website Re-Make"
-            place="@Elevate Global Education Group Limited"
-            desc="Develop elevate-educate.net for a small business in Hong Kong."
-            sub="Remote"
-            date="Dec 2024 - Jan 2025 • 1 Month"
+        <Puratext
+            text="I am currently learning web development to build projects while enjoying the hype of problem-solving in competitive programming and math. I enjoy customizing my Linux operating system, specifically NixOS with Hyprland. I love giving presentations and organizing events like hackathons or even to-do lists. Meeting new people, sharing, and discussing different topics brings me joy. In my free time, I enjoy researching and comparing computer hardware, watching Formula One races on weekends, designing user interfaces, and cooking + eating delicious meals."
         />
     </>
   );
 }
-
-export default Experiences;

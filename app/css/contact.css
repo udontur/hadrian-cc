@@ -27,7 +27,6 @@
     display: flex;
     justify-content: end;
     align-items: end;
-    width: 100%;
     gap: 8px;
 }
 .send{
@@ -49,4 +48,15 @@
 .methods>button:hover{
     background-color: #34363A;
     border-color: #a1e752
+}
+
+.bottom-sec{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: end;
+}
+.reply-time{
+    margin-left: 8px;
+    color: #979797;
 }
