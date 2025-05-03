@@ -11,7 +11,7 @@ function Techstack({ }) {
                 />
                 <Cardtech
                     title="Languages & Frameworks"
-                    icons="https://skillicons.dev/icons?i=cpp,react,html,css,js,latex"
+                    icons="https://skillicons.dev/icons?i=cpp,rust,react,html,css,js,latex"
                 />
                 <Cardtech
                     title="Tools & Technologies"
@@ -19,7 +19,7 @@ function Techstack({ }) {
                 />
                 <Cardtech
                     title="Tech Skills I want to learn"
-                    icons="https://skillicons.dev/icons?i=rust,gtk,docker,postgres,bash"
+                    icons="https://skillicons.dev/icons?i=gtk,docker,postgres,bash"
                 />
                 {/* boost lib, cargo */}
             </div>
