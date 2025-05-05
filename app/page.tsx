@@ -30,8 +30,8 @@ export default function Home() {
         <main>
             <Landing/>
             <Linktree/>
-            <About/>
-            <div className="m-32"></div>
+            {/* <About/>
+            <div className="m-32"></div> */}
             <Divider/>
             <div>
                 <Experiences/>

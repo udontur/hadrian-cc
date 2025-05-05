@@ -11,7 +11,7 @@ function Techstack({ }) {
                 />
                 <Cardtech
                     title="Languages & Frameworks"
-                    icons="https://skillicons.dev/icons?i=cpp,rust,react,html,css,js,latex"
+                    icons="https://skillicons.dev/icons?i=cpp,rust,html,css,latex"
                 />
                 <Cardtech
                     title="Tools & Technologies"
@@ -21,7 +21,11 @@ function Techstack({ }) {
                     title="Tech Skills I want to learn"
                     icons="https://skillicons.dev/icons?i=gtk,docker,postgres,bash"
                 />
-                {/* boost lib, cargo */}
+                <Cardtech
+                    title="Used before, but not familar "
+                    icons="https://skillicons.dev/icons?i=react,js,ts,next,tailwind"
+                />
+                {/* boost lib */}
             </div>
         </>
     );
