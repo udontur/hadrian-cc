@@ -22,7 +22,7 @@ function Techstack({ }) {
                     icons="https://skillicons.dev/icons?i=gtk,docker,postgres,bash"
                 />
                 <Cardtech
-                    title="Used before, but not familar "
+                    title="Used before, but not familiar "
                     icons="https://skillicons.dev/icons?i=react,js,ts,next,tailwind"
                 />
                 {/* boost lib */}
