@@ -19,7 +19,7 @@ function Techstack({ }) {
                 />
                 <Cardtech
                     title="Tech Skills I want to learn"
-                    icons="https://skillicons.dev/icons?i=gtk,docker,postgres,bash"
+                    icons="https://skillicons.dev/icons?i=gtk,react,js,postgres,bash"
                 />
                 <Cardtech
                     title="Used before, but not familiar "
