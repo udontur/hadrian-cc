@@ -1,0 +1,94 @@
+.name {
+    font-size: 128px;
+    margin-top: -50px;
+    margin-bottom: -38px;
+    margin-left: -4px;
+    font-weight: 600;
+    color: transparent;
+    /* color: #a1e754; */
+    text-shadow: 0px 0px 12px #a1e754;
+    font-family: "Shantell Sans" !important;
+    font-weight: 600;
+    background-image: linear-gradient(90deg,rgba(161, 231, 84, 1) 0%, rgba(139, 226, 172, 1) 50%, rgba(109, 237, 233, 1) 100%);
+    background-clip: text;
+
+}
+
+.profile-pic {
+    width: 400px;
+    background-color: transparent;
+    animation: rotate 1s ease-in-out infinite alternate;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(-10deg);
+    }
+}
+.hello{
+    font-size: 48px;
+    top: 50%;
+    left: 50%;
+}
+.hello span {
+    display: inline-block;
+    animation: bounce 0.35s infinite alternate;
+}
+.hello span:nth-child(2){
+    animation-delay: 0.05s;
+}
+.hello span:nth-child(3){
+    animation-delay: 0.10s;
+}
+.hello span:nth-child(4){
+    animation-delay: 0.15s;
+}
+.hello span:nth-child(5){
+    animation-delay: 0.20s;
+}
+.hello span:nth-child(6){
+    animation-delay: 0.25s;
+}
+.hello span:nth-child(7){
+    animation-delay: 0.30s;
+}
+.hello span:nth-child(8){
+    animation-delay: 0.35s;
+}
+/*
+.hello span:nth-child(9){
+    animation-delay: 0.40s;
+}
+.hello span:nth-child(10){
+    animation-delay: 0.45s;
+}
+.hello span:nth-child(11){
+    animation-delay: 0.50s;
+} */
+
+.emptyTXT{
+    width: 8px;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-15px);
+    }
+}
+
+
+.landing{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 150px 16px;
+}
+.funny-quote{
+    color: #c1c1c1;
+}

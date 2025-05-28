@@ -1,0 +1,32 @@
+
+* {
+    color-scheme: dark;
+    transition: ease-in-out !important;
+    transition-duration: 0.2s !important;
+}
+body{
+    font-family: "Phantom Sans";
+    font-weight: 400;
+    scroll-behavior: smooth;
+    font-size: 18px;
+    background-color: #202124;
+    color: #fff;
+}
+.center{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.m-32{
+    padding-bottom: 72px;
+}
+
+.m-48{
+    padding-bottom: 128px;
+}
+
+a{
+    color: #ddffb6;
+}

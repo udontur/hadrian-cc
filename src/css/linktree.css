@@ -1,0 +1,37 @@
+.linktree{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 1200px;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding-top: 40px !important;
+    padding-bottom: 72px !important;
+}
+.socials{
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 12px;
+    border: solid;
+    border-radius: 16px;
+    border-width: 1px;
+    border-color: #3D3D3D;
+    transition: ease-in-out;
+    transition-duration: 0.2s;
+    background-color:#28292A;
+    cursor: pointer;
+    text-decoration: none !important;
+    gap: 16px;
+}
+.socials:hover{
+    background-color: #34363A;
+    border: solid;
+    border-width: 1px;
+    border-color: #a1e752;
+}
+.no-under{
+    text-decoration: none !important;
+}

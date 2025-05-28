@@ -1,0 +1,73 @@
+.card{
+    display: flex;
+    background-color: #28292A;
+    padding: 16px;
+    border-radius: 24px;
+    gap: 16px;
+    transition: ease-in-out;
+    transition-duration: 0.2s;
+    border: solid;
+    border-width: 2px;
+    border-color: #3d3d3d;
+    width: 800px;
+    cursor: default !important;
+}
+
+.card:hover{
+    background-color: #34363A;
+    border: solid;
+    border-width: 2px;
+    border-color: #a1e752;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+.card .logo{
+    width: 128px;
+    height: 128px;
+    border-radius: 8px;
+    border: solid;
+    border-width: 2px;
+    border-color: #a1e752;
+}
+.card .title{
+    color: #a1e752;
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 12px;
+    margin-top: 6px;
+    line-height: 80%;
+}
+.sub{
+    color: #8b8b8b;
+}
+.flex-col>div{
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 115%;
+}
+.header{
+    font-size: 48px;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 96px;
+    margin-bottom: 12px;
+}
+.skills-dev{
+    width: fit-content;
+    height: 64px;
+}
+.skills-used{
+    width: fit-content;
+    height: 16px;
+    margin-top: 4px;
+    margin-bottom: 2px;
+}
+.high{
+    color: #a1e754
+}
+.puratext{
+    text-align: justify;
+    text-justify: inter-word;
+}
