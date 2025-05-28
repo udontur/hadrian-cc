@@ -16,8 +16,8 @@ import Divider from "./page/Divider.jsx";
 // import About from "./page/About.jsx"
 
 // Vercel
-// import { Analytics } from "@vercel/analytics/react";
-// import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 import "./index.css";
 
@@ -54,8 +54,8 @@ export default function Home() {
         <Empty/>
         <Footer/>
 
-        {/* <Analytics/>
-        <SpeedInsights/> */}
+        <Analytics/>
+        <SpeedInsights/>
     </>
   );
 }
