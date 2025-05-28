@@ -1,4 +1,4 @@
-.con-email{
+.con-email {
     width: 800px;
     display: flex;
     background-color: #28292A;
@@ -16,47 +16,57 @@
     align-items: center;
 }
 
-.email{
+.email {
     font-size: 72px;
     font-weight: 700;
     color: #a1e752;
-    margin: 32px 0px;
-    margin-bottom: 16px;
+    margin: 48px 0px;
+    margin-bottom: 32px;
 }
-.methods{
+
+.methods {
     display: flex;
     justify-content: end;
     align-items: end;
     gap: 8px;
 }
-.send{
+
+.send {
     color: #979797;
 }
-.send:hover{
+
+.send:hover {
     color: #ffffff;
 }
-.methods>button{
+
+.methods>button {
     background-color: #28292A;
     border: solid;
     border-width: 1px;
-    padding: 6px 16px;
+    padding: 8px 16px;
     border-radius: 10px;
     border-color: #5b5b5b;
     cursor: pointer;
 }
 
-.methods>button:hover{
+.methods>button>a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.methods>button:hover {
     background-color: #34363A;
     border-color: #a1e752
 }
 
-.bottom-sec{
+.bottom-sec {
     display: flex;
     justify-content: space-between;
     width: 100%;
     align-items: end;
 }
-.reply-time{
+
+.reply-time {
     margin-left: 8px;
     color: #979797;
 }
