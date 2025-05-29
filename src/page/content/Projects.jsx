@@ -15,7 +15,7 @@ export default function Projects() {
             desc="This website! My portfolio and web app playground."
             source="https://github.com/udontur/hadrian-cc"
             demo="https://hadrian.cc"
-            tech="react,ts,js,tailwind,css,vercel,github,git,html,figma"
+            tech="react,js,css,html,vercel,github,git,figma"
             date="Mar 2024 - Present"
         />
         <Cardpro
