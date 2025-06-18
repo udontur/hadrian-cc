@@ -7,7 +7,7 @@ function Techstack({ }) {
         <>
             <div className="center" id="skills">
                 <Title
-                    title="Tech Stack (Upgrading)"
+                    title="Tech Stack"
                 />
                 <Cardtech
                     title="Languages & Frameworks"
@@ -15,17 +15,17 @@ function Techstack({ }) {
                 />
                 <Cardtech
                     title="Tools & Technologies"
-                    icons="https://skillicons.dev/icons?i=linux,nix,cmake,git,github,figma"
+                    icons="https://skillicons.dev/icons?i=linux,nix,git,github,figma"
                 />
                 <Cardtech
                     title="New Tech Skills I want to learn"
                     icons="https://skillicons.dev/icons?i=gtk,react,js,postgres,bash"
                 />
                 <Cardtech
-                    title="Used before, but not familiar "
-                    icons="https://skillicons.dev/icons?i=react,js,vite"
+                    title="Tech I have used before"
+                    icons="https://skillicons.dev/icons?i=react,js,vite,cmake"
                 />
-                {/* boost fmt ftxui */}
+                {/* boost fmt ftxui hyprland bazel*/}
             </div>
         </>
     );
