@@ -11,7 +11,7 @@ export default function Cardpro({image, title, desc, source, demo, tech, date}) 
                 <div>
                     <a href={source} className="underline">Repository</a> <a href={demo} className="underline">Demo</a>
                 </div>
-                <img className="skills-used" src={`https://skillicons.dev/icons?i=${tech}`} />
+                <div>{tech}</div>
                 <div className="sub">{date}</div>
             </div>
         </div>

@@ -18,14 +18,14 @@ function Techstack({ }) {
                     icons="https://skillicons.dev/icons?i=linux,nix,git,github,figma"
                 />
                 <Cardtech
-                    title="New Tech Skills I want to learn"
+                    title="Tech Skills I want to learn"
                     icons="https://skillicons.dev/icons?i=gtk,react,js,postgres,bash"
                 />
                 <Cardtech
                     title="Tech I have used before"
-                    icons="https://skillicons.dev/icons?i=react,js,vite,cmake"
+                    icons="https://skillicons.dev/icons?i=react,js,vite"
                 />
-                {/* boost fmt ftxui hyprland bazel*/}
+                {/* boost fmt ftxui hyprland*/}
             </div>
         </>
     );
