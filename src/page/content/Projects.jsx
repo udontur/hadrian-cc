@@ -43,7 +43,7 @@ export default function Projects() {
             source="https://github.com/udontur/hadrian-cc"
             demo="https://hadrian.cc"
             tech="ReactJS, JavaScript, CSS, HTML, Vite, Figma"
-            date="Mar 2024 - Present"
+            date="2023 - Present"
         />
     </div>
   );
