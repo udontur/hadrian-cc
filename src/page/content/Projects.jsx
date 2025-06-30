@@ -15,7 +15,7 @@ export default function Projects() {
             desc="A blazingly fast competitive programming testing helper"
             source="https://github.com/udontur/umpire"
             demo="https://github.com/udontur/umpire/blob/main/asset/demo.gif"
-            tech="C++, Nix, Argparse, FTXUI, Fmt, CMake, Linux, Git, Github"
+            tech="Tech: C++, Nix, Argparse, FTXUI, Fmt, CMake, Linux, Git, Github Actions"
             date="May 2025 - Jun 2025"
         />
         <Cardpro
@@ -24,8 +24,17 @@ export default function Projects() {
             desc="My Daily Driver OS: NixOS + Hyprland + Home Manager + Flakes"
             source="https://github.com/udontur/nixos"
             demo="https://github.com/udontur/nixos"
-            tech="Nix, Linux, the love for customization"
+            tech="Tech: Nix, Linux"
             date="Mar 2025 - Present"
+        />
+        <Cardpro
+            image="/img/favicon.png"
+            title="This Website, hadrian.cc"
+            desc="My portfolio and web app playground."
+            source="https://github.com/udontur/hadrian-cc"
+            demo="https://hadrian.cc"
+            tech="Tech: ReactJS, JavaScript, CSS, HTML, Vite, Figma"
+            date="2023 - Present"
         />
         <Cardpro
             image="/img/cs.png"
@@ -35,15 +44,6 @@ export default function Projects() {
             demo="https://github.com/udontur/cs"
             tech=""
             date="Jan 2024 - Nov 2024"
-        />
-        <Cardpro
-            image="/img/favicon.png"
-            title="This Website, hadrian.cc"
-            desc="My portfolio and web app playground."
-            source="https://github.com/udontur/hadrian-cc"
-            demo="https://hadrian.cc"
-            tech="ReactJS, JavaScript, CSS, HTML, Vite, Figma"
-            date="2023 - Present"
         />
     </div>
   );

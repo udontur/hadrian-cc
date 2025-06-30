@@ -20,7 +20,7 @@ export default function Awards() {
             <Cardaward
                 image="/img/wyhk.png"
                 title="Wah Yan College, Hong Kong"
-                diploma="Hong Kong Secondary School Diploma (Grade 7 to Grade 9.5)"
+                diploma="Hong Kong Local School (Grade 7 to Grade 9.5)"
                 award1="Fr. McGaley Memorial Award (Nov 2022)"
                 award2=""
                 date="Sep 2021 - Jan 2024"

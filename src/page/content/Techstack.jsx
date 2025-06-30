@@ -15,17 +15,13 @@ function Techstack({ }) {
                 />
                 <Cardtech
                     title="Tools & Technologies"
-                    icons="https://skillicons.dev/icons?i=linux,nix,git,github,figma"
+                    icons="https://skillicons.dev/icons?i=linux,nix,cmake,git,github,figma"
                 />
                 <Cardtech
-                    title="Tech Skills I want to learn"
-                    icons="https://skillicons.dev/icons?i=gtk,react,js,postgres,bash"
+                    title="Tech Skills I want to learn (or used before)"
+                    icons="https://skillicons.dev/icons?i=gtk,react,js,postgres,bash,python"
                 />
-                <Cardtech
-                    title="Tech I have used before"
-                    icons="https://skillicons.dev/icons?i=react,js,vite"
-                />
-                {/* boost fmt ftxui hyprland*/}
+                {/* argparse fmt ftxui*/}
             </div>
         </>
     );
