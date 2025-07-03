@@ -13,7 +13,7 @@ export default function Awards() {
                 image="/img/dsc.png"
                 title="DSC International School"
                 diploma="Ontario Secondary School Diploma (Starting from Grade 9.5)"
-                award1="Academic Honor Roll: S2 2024, S1 2025"
+                award1="Honor Roll: Sem 1 2024, Sem 2 2025"
                 award2="See the courses I took (not available yet)"
                 date="Feb 2024 - Present"
             />
