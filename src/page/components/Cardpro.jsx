@@ -8,7 +8,7 @@ export default function Cardpro({image, title, desc, source, demo, tech, date}) 
             <div className="flex-col">
                 <div className="title">{title}</div>
                 <div>{desc}</div>
-                <div>
+                <div className="sub">
                     <a href={source} className="underline">Repository</a> <a href={demo} className="underline">Demo</a>
                 </div>
                 <div>{tech}</div>

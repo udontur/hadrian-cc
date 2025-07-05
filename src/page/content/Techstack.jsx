@@ -1,8 +1,7 @@
-
 import Cardtech from "../components/Cardtech.jsx"
 import Title from "../components/Title.jsx"
 
-function Techstack({ }) {
+export default function Techstack({ }) {
     return (
         <>
             <div className="center" id="skills">
@@ -11,7 +10,7 @@ function Techstack({ }) {
                 />
                 <Cardtech
                     title="Languages & Frameworks"
-                    icons="https://skillicons.dev/icons?i=cpp,rust,nix,html,css,latex"
+                    icons="https://skillicons.dev/icons?i=cpp,rust,css,html,latex"
                 />
                 <Cardtech
                     title="Tools & Technologies"
@@ -19,7 +18,7 @@ function Techstack({ }) {
                 />
                 <Cardtech
                     title="Tech Skills I want to learn (or used before)"
-                    icons="https://skillicons.dev/icons?i=gtk,react,js,postgres,bash,python"
+                    icons="https://skillicons.dev/icons?i=react,js,gtk,docker,bash,python,postgres"
                 />
                 {/* argparse fmt ftxui*/}
             </div>
@@ -27,4 +26,3 @@ function Techstack({ }) {
     );
 }
 
-export default Techstack;

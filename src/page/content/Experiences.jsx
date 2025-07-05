@@ -10,7 +10,7 @@ function Experiences() {
         />
         <Cardexp
             image="/img/chonglap.png"
-            title="Front-End Web Developer"
+            title="Front-End Web Developer (student)"
             place="@Chong Lap (H.K.) Co. Ltd."
             desc="Developed the company website with the IT team"
             link="https://hk.chonglap.com"

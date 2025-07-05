@@ -25,7 +25,7 @@ export default function Projects() {
             source="https://github.com/udontur/nixos"
             demo="https://github.com/udontur/nixos"
             tech="Tech: Nix, Linux"
-            date="Mar 2025 - Present"
+            date="Mar 2025 - Present, Git"
         />
         <Cardpro
             image="/img/favicon.png"
@@ -33,7 +33,7 @@ export default function Projects() {
             desc="My portfolio and web app playground."
             source="https://github.com/udontur/hadrian-cc"
             demo="https://hadrian.cc"
-            tech="Tech: ReactJS, JavaScript, CSS, HTML, Vite, Figma"
+            tech="Tech: ReactJS, JavaScript, CSS, HTML, Vite, Figma, Git"
             date="2023 - Present"
         />
         <Cardpro
@@ -42,7 +42,7 @@ export default function Projects() {
             desc="A collection of competitive programming resource for my teamates."
             source="https://github.com/udontur/cs"
             demo="https://github.com/udontur/cs"
-            tech=""
+            tech="Tech: C++, Git"
             date="Jan 2024 - Nov 2024"
         />
     </div>
