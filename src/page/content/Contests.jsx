@@ -10,6 +10,14 @@ function Contests() {
                 title="Contests"
             />
             <Cardcon
+                image="/img/cityu.png"
+                title="Silver Award, Finalist"
+                place="Hong Kong Secondary School Coding Challenge (Final Event)"
+                desc="@City University of Hong Kong"
+                rank="Ranking (final): 21 / 92, Heat: 53 / 464"
+                date="Jul 2025"
+            />
+            <Cardcon
                 image="/img/cemc.png"
                 title="Top 2%, Honor Roll, Distinction"
                 place="Canadian Computing Competition (International, Junior)"
@@ -24,14 +32,6 @@ function Contests() {
                 desc="@University of Waterloo"
                 rank="Ranking: 1019 / 20235"
                 date="Feb 2025"
-            />
-            <Cardcon
-                image="/img/cityu.png"
-                title="Bronze Award, Finalist"
-                place="Hong Kong Secondary School Coding Challenge (Final Event)"
-                desc="@City University of Hong Kong"
-                rank="Ranking: 35 / 100"
-                date="Jul 2024"
             />
         </div>
     </>
