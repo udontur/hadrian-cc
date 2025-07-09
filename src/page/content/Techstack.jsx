@@ -10,7 +10,7 @@ export default function Techstack({ }) {
                 />
                 <Cardtech
                     title="Languages & Frameworks"
-                    icons="https://skillicons.dev/icons?i=cpp,rust,css,html,latex"
+                    icons="https://skillicons.dev/icons?i=cpp,rust,react,css,html,latex"
                 />
                 <Cardtech
                     title="Tools & Technologies"
@@ -18,9 +18,9 @@ export default function Techstack({ }) {
                 />
                 <Cardtech
                     title="Tech Skills I want to learn (or used before)"
-                    icons="https://skillicons.dev/icons?i=react,js,gtk,docker,bash,python,postgres"
+                    icons="https://skillicons.dev/icons?i=js,gtk,docker,bash,python,postgres"
                 />
-                {/* argparse fmt ftxui*/}
+                {/* helix */}
             </div>
         </>
     );

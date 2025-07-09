@@ -21,29 +21,20 @@ export default function Projects() {
         <Cardpro
             image="/img/nixconf.png"
             title="NixOS Config"
-            desc="My Daily Driver OS: NixOS + Hyprland + Home Manager + Flakes"
+            desc="My daily driver linux setup!"
             source="https://github.com/udontur/nixos"
             demo="https://github.com/udontur/nixos"
-            tech="Tech: Nix, Linux"
-            date="Mar 2025 - Present, Git"
+            tech="Tech: Nix, Linux, Reading a lot docs"
+            date="Mar 2025 - Present"
         />
         <Cardpro
-            image="/img/favicon.png"
+            image="/img/web-display.png"
             title="This Website, hadrian.cc"
-            desc="My portfolio and web app playground."
+            desc="My portfolio and web app playground"
             source="https://github.com/udontur/hadrian-cc"
             demo="https://hadrian.cc"
-            tech="Tech: ReactJS, JavaScript, CSS, HTML, Vite, Figma, Git"
+            tech="Tech: ReactJS, CSS, HTML, JavaScript, Figma, Git, Vite"
             date="2023 - Present"
-        />
-        <Cardpro
-            image="/img/cs.png"
-            title="udontur/cs"
-            desc="A collection of competitive programming resource for my teamates."
-            source="https://github.com/udontur/cs"
-            demo="https://github.com/udontur/cs"
-            tech="Tech: C++, Git"
-            date="Jan 2024 - Nov 2024"
         />
     </div>
   );

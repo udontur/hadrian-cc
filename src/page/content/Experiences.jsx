@@ -10,7 +10,7 @@ function Experiences() {
         />
         <Cardexp
             image="/img/chonglap.png"
-            title="Front-End Web Developer (student)"
+            title="Front-End Web Developer (Student)"
             place="@Chong Lap (H.K.) Co. Ltd."
             desc="Developed the company website with the IT team"
             link="https://hk.chonglap.com"
@@ -20,9 +20,9 @@ function Experiences() {
         />
         <Cardexp
             image="/img/elevate-logo.png"
-            title="Website Revamp"
+            title="Website Revamp (Volunteer)"
             place="@Elevate Global Education Group Limited"
-            desc="Revamp a small business' website"
+            desc="Revamp a small tutor center's website"
             link="https://elevate-educate.net"
             linktxt="elevate-educate.net"
             sub="Remote"

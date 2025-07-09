@@ -14,7 +14,7 @@ export default function Awards() {
                 title="DSC International School"
                 diploma="Ontario Secondary School Diploma (Starting from Grade 9.5)"
                 award1="Honor Roll: Sem 2 2024, Sem 1 2025, Sem 2 2025"
-                award2="List of courses I took (not available yet)"
+                // award2="List of courses I took (not available yet)"
                 date="Feb 2024 - Present"
             />
             <Cardaward
