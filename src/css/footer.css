@@ -1,5 +1,43 @@
-.left-footer{
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-right: 16px;
     margin-left: 16px;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
+}
+.left-footer{
     color: #979797;
 }
+iframe{
+    background: none !important;
+}
+#webring-wrapper{
+    display: flex;
+    align-items: center;
+}
+.webring-anchor{
+    font-size:24px;
+    color:rgba(255, 255, 255,.8);
+    text-decoration:none;
+    transition:color .5s
+}
+.webring-anchor:hover{
+    color:#FFFFFF;
+    text-decoration:none
+}
+.webring-logo{
+    background-image:url(https://assets.hackclub.com/icon-rounded.svg);
+    background-repeat:no-repeat;
+    background-position:top left;
+    background-size:contain;
+    -webkit-flex-shrink:0;
+    -ms-flex-negative:0;
+    flex-shrink:0;
+    display:inline-block;
+    width:36px;
+    height:36px;
+    margin:0 4px;
+    vertical-align:middle
+}
+ 
