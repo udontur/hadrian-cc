@@ -4,7 +4,7 @@ function Navbar() {
     return (
         <>
             <div className="nav">
-                <a href="https://hadrian.cc">
+                <a href="#">
                     <button>
                         <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                             width="32" height="32" viewBox="0 0 2808.000000 2808.000000" preserveAspectRatio="xMidYMid meet">

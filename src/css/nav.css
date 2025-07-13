@@ -80,3 +80,24 @@
     display: flex;
     gap: 32px;
 }
+#experience{
+    scroll-behavior: smooth !important;
+}
+#contest{
+    scroll-behavior: smooth !important;
+}
+#projects{
+    scroll-behavior: smooth !important;
+}
+#skills{
+    scroll-behavior: smooth !important;
+}
+#contact{
+    scroll-behavior: smooth !important;
+}
+#{
+    scroll-behavior: smooth !important;
+}
+*, hmtl {
+    scroll-behavior: smooth !important;
+}

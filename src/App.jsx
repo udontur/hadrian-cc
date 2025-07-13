@@ -28,8 +28,7 @@ export default function Home() {
         <main>
             <Landing/>
             <Linktree/>
-            {/* <About/>
-            <div className="m-32"></div> */}
+            {/* <About/> */}
             <Divider/>
             <div>
                 <Experiences/>
@@ -38,7 +37,6 @@ export default function Home() {
                 <Techstack/>
                 {/* v3
                 <Softskill/>                                                                                                                  https://docs.google.com/spreadsheets/d/1Bkowf7nFh9SGMkJsDxa_5fZ2fzpaSVcksXklhdGuNiM/edit?gid=0#gid=0
-                
                 <Hardskill/> (Replace tech stack?)
                 */}
                 <Awards/>
@@ -48,7 +46,6 @@ export default function Home() {
 
             <Contact/>
             <div className="m-48"></div>
-            {/* <Divider/> */}
         </main>
         <Empty/>
         <Footer/>

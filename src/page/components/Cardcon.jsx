@@ -4,7 +4,9 @@
 export default function Cardcon({image, title, place, desc, rank, date}) {
     return (
         <div className="card">
-            <img className="logo" src={image}/>
+            <div className="wrap-border">
+                <img className="logo" src={image}/>
+            </div>
             <div className="flex-col">
                 <div className="title">{title}</div>
                 <div>{place}</div>

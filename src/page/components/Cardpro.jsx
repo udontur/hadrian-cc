@@ -4,7 +4,9 @@
 export default function Cardpro({image, title, desc, source, demo, tech, date}) {
     return (
         <div className="card">
-            <img className="logo" src={image}/>
+            <div className="wrap-border">
+                <img className="logo" src={image}/>
+            </div>
             <div className="flex-col">
                 <div className="title">{title}</div>
                 <div>{desc}</div>
