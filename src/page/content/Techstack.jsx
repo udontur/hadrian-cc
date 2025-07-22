@@ -10,17 +10,16 @@ export default function Techstack({ }) {
                 />
                 <Cardtech
                     title="Languages & Frameworks"
-                    icons="https://skillicons.dev/icons?i=cpp,rust,react,css,html,latex"
+                    icons="https://skillicons.dev/icons?i=cpp,rust,py,react,css,html,latex"
                 />
                 <Cardtech
                     title="Tools & Technologies"
-                    icons="https://skillicons.dev/icons?i=linux,nix,cmake,git,github,figma"
+                    icons="https://skillicons.dev/icons?i=linux,nix,cmake,git,githubactions,figma"
                 />
                 <Cardtech
                     title="Tech Skills I want to learn (or used before)"
-                    icons="https://skillicons.dev/icons?i=js,gtk,docker,bash,python,postgres"
+                    icons="https://skillicons.dev/icons?i=js,gtk,docker,bash,postgres"
                 />
-                {/* helix */}
             </div>
         </>
     );
