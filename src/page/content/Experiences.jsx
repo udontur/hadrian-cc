@@ -2,7 +2,7 @@
 import Title from '../components/Title.jsx';
 import Cardexp from "../components/Cardexp.jsx";
 
-function Experiences() {
+export default function Experiences() {
   return (
     <div className="center" id="experience">
         <Title
@@ -10,17 +10,17 @@ function Experiences() {
         />
         <Cardexp
             image="/img/chonglap.png"
-            title="Front-End Web Developer (Student)"
+            title="IT Intern (Remote)"
             place="@Chong Lap (H.K.) Co. Ltd."
             desc="Developed the company website with the IT team"
             link="https://hk.chonglap.com"
             linktxt="chonglap.com"
-            sub="Onsite and Remote"
+            sub="Remote (with Onsite meetings)"
             date="Feb 2025 - Mar 2025 • 2 Months"
         />
         <Cardexp
             image="/img/elevate-logo.png"
-            title="Website Revamp (Volunteer)"
+            title="Website Developer (Volunteer)"
             place="@Elevate Global Education Group Limited"
             desc="Revamp a small tutor center's website"
             link="https://elevate-educate.net"
@@ -31,5 +31,3 @@ function Experiences() {
     </div>
   );
 }
-
-export default Experiences;
