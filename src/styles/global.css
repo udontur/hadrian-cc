@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+    --font-display: "Inter";
+    --color-main: #da2034;
+}
+
+* {
+    transition: all 0.15s ease-in-out;
+}

@@ -1,0 +1,3 @@
+# Yeah yeah yeah keep scraping
+User-agent: *
+Allow: /
