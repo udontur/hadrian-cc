@@ -9,7 +9,8 @@ export default defineConfig({
             provider: fontProviders.google(),
             name: "Manrope",
             cssVariable: "--font-manrope"
-        }]
+        }],
+        svgo: true
     },
     vite: {
         plugins: [tailwindcss()]
