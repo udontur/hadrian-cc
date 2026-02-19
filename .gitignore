@@ -5,8 +5,5 @@ dist/
 # dependencies
 node_modules/
 
-# VSCode folder
-.vscode
-
 # environment variables
 .env
