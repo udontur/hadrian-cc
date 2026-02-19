@@ -1,0 +1,52 @@
+---
+import UdonturOutline from '@assets/icons/udontur-outline.svg';
+import HeaderLinkCollection from "@components/Header/LinkCollection.astro";
+---
+
+<div
+class="nav mr-6 ml-6 pt-4 pb-4 pr-8 pl-8
+    flex justify-between rounded-[64px]
+    !border border-outline backdrop-blur-sm z-1
+    shadow-[0px_5px_8px_0px_rgba(99,99,99,0.2)]"
+>
+    <a href="/" class="no-underline">
+        <button>
+            <UdonturOutline fill="var(--color-main)"/>
+            Hadrian
+        </button>
+    </a>
+    <!-- TODO: page transition api -->
+    <HeaderLinkCollection/>
+</div>
+
+<style>
+    .nav{
+    /* border-width: 1.5px !important; */
+    /* border: solid; */
+    /* border-color: #3D3D3D; */
+    /* background: transparent; */
+    /* backdrop-filter: blur(10px); */
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 5px 8px 0px; */
+    /* z-index: 1; */
+}
+.nav>a>button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    border-radius: 64px;
+    border-width: 1px !important;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: #c1c1c1;
+    
+}
+
+.nav>a>button{
+    color: #a1e752;
+    text-shadow: 0px 0px 8px #a1e754;
+}
+
+</style>

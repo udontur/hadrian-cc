@@ -1,0 +1,31 @@
+---
+import linksData from "@data/header-links.json";
+import Link from "./Link.astro";
+---
+<li>
+    {
+        linksData.map((linksData)=>{
+            return (
+                <Link
+                    name={linksData.name},
+                    link={linksData.link}
+                />
+            );
+        })
+    }
+</li>
+
+<style>
+li>ul{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+li{
+    list-style-type: none;
+    display: flex;
+    gap: 32px;
+}
+</style>
