@@ -2,7 +2,7 @@
 import linksData from "@data/header-links.json";
 import Link from "./Link.astro";
 ---
-<li>
+<li class="flex gap-8 list-none">
     {
         linksData.map((linksData)=>{
             return (
@@ -14,18 +14,3 @@ import Link from "./Link.astro";
         })
     }
 </li>
-
-<style>
-li>ul{
-    padding: 0px;
-    margin: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-li{
-    list-style-type: none;
-    display: flex;
-    gap: 32px;
-}
-</style>
