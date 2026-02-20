@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import BackgroundLayer from "@assets/background.svg";
 
 import Main from '../components/Main.astro';
 import Footer from "../components/Footer.astro";
@@ -7,7 +8,9 @@ import Header from "../components/Header/Header.astro";
 ---
 
 <Layout>
-	<img class="fixed top-[0] left-[0] w-full h-full blur-3xl z-[-1]" src="/background.svg" alt="background" fetchpriority="high" />
+	<div class="fixed top-[0] left-[0] w-full h-full blur-3xl z-[-1]">
+		<BackgroundLayer/>
+	</div>
 	<body class="min-h-screen flex flex-col" >
 		<header class="sticky top-0 pt-6">
 			<Header />
