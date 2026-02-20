@@ -12,6 +12,7 @@
   "dependencies": {
     "@astrojs/check": "^0.9.6",
     "@tailwindcss/vite": "^4.2.0",
+    "animejs": "v4.3.5",
     "astro": "^5.17.1",
     "typescript": "^5.9.3"
   }

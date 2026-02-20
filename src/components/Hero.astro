@@ -1,0 +1,48 @@
+---
+import { Image } from "astro:assets";
+import udonturImage from "@assets/images/udontur1000-transparent.png";
+---
+
+<div class="flex flex-col">
+    <div class="h-48"></div>
+    <div class="flex justify-between items-center">
+        <div class="">
+            <div class="large grid centered square-grid"></div>
+            <div class="good">
+                Hello!!!
+            </div>
+            <div class="font-big text-8xl">Hadrian</div>
+            <div>is my name</div>
+        </div>
+        <div class="w-96">
+            <Image
+                src={udonturImage},
+                alt="My profile picture (it's a cartoon turtle!)"
+            />
+        </div>
+    </div>
+    <div class="h-48"></div>
+</div>
+
+<script>
+import { animate, stagger, splitText } from "animejs";
+
+const { chars } = splitText('.good', { words: false, chars: true });
+
+animate(chars, {
+    // Property keyframes
+    y: [
+        { to: '-2.75rem', ease: 'outExpo', duration: 600 },
+        { to: 0, ease: 'outBounce', duration: 800, delay: 100 }
+    ],
+    // Property specific parameters
+    rotate: {
+        from: '-1turn',
+        delay: 0
+    },
+    delay: stagger(50),
+    ease: 'inOutCirc',
+    loopDelay: 1000,
+    loop: true
+});
+</script>
