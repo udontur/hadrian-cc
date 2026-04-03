@@ -1,10 +1,20 @@
 ---
 import { Image } from "astro:assets";
 import udonturImage from "@assets/images/udontur1000-transparent.png";
+import { Signature } from "@components/spellui/signature";
 ---
 
 <div class="flex flex-col">
     <div class="h-48"></div>
+    <div class="flex-col items-center justify-items-center">
+        <div>Yo! Nice to meet you! My name is</div>
+        <Signature
+            text="Hadrian Lau"
+            fontSize={32}
+            color="#a1e752"
+        />
+        <div>insert a punch line lol</div>
+    </div>
     <div class="flex justify-between items-center">
         <div class="">
             <div class="large grid centered square-grid"></div>
@@ -23,26 +33,3 @@ import udonturImage from "@assets/images/udontur1000-transparent.png";
     </div>
     <div class="h-48"></div>
 </div>
-
-<script>
-import { animate, stagger, splitText } from "animejs";
-
-const { chars } = splitText('.good', { words: false, chars: true });
-
-animate(chars, {
-    // Property keyframes
-    y: [
-        { to: '-2.75rem', ease: 'outExpo', duration: 600 },
-        { to: 0, ease: 'outBounce', duration: 800, delay: 100 }
-    ],
-    // Property specific parameters
-    rotate: {
-        from: '-1turn',
-        delay: 0
-    },
-    delay: stagger(50),
-    ease: 'inOutCirc',
-    loopDelay: 1000,
-    loop: true
-});
-</script>
