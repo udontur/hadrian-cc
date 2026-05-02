@@ -96,7 +96,11 @@ export function BlurReveal({
                     variants={itemVariants}
                     className="inline-block"
                     style={
-                      letterSpacing ? { marginRight: letterSpacing } : undefined
+                      letterSpacing
+                        ? {
+                            marginRight: letterSpacing,
+                          }
+                        : undefined
                     }
                   >
                     {char}

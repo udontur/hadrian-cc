@@ -50,9 +50,11 @@
   },
   "html": {
     "formatter": {
-      "indentScriptAndStyle": false,
+      "enabled": true,
+      "indentScriptAndStyle": true,
       "selfCloseVoidElements": "always"
-    }
+    },
+    "experimentalFullSupportEnabled": true
   },
   "overrides": [
     {
