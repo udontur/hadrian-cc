@@ -8,7 +8,8 @@ export function Socials({ link, svg }: { link: string; svg: string }) {
           ease-in-out duration-200
           bg-card cursor-pointer no-underline gap-4
           hover:bg-secondary hover:border-primary
-        ">
+        "
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="48"
@@ -19,5 +20,5 @@ export function Socials({ link, svg }: { link: string; svg: string }) {
         </svg>
       </button>
     </a>
-  );
+  )
 }

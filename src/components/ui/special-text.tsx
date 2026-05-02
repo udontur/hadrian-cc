@@ -1,25 +1,25 @@
-"use client";
+"use client"
 
-import { useEffect, useRef, useState } from "react";
-import { useInView } from "motion/react";
+import { useInView } from "motion/react"
+import { useCallback, useEffect, useRef, useState } from "react"
 
 interface SpecialTextProps {
-  children: string;
-  speed?: number;
-  delay?: number;
-  className?: string;
-  inView?: boolean;
-  once?: boolean;
+  children: string
+  speed?: number
+  delay?: number
+  className?: string
+  inView?: boolean
+  once?: boolean
 }
 
-const RANDOM_CHARS = "X0!@#$%^&*()_+-={}[]:; '<>?,./|\\";
+const RANDOM_CHARS = "X0!@#$%^&*()_+-={}[]:; '<>?,./|\\"
 
 function getRandomChar(prevChar?: string): string {
-  let char: string;
+  let char: string
   do {
-    char = RANDOM_CHARS[Math.floor(Math.random() * RANDOM_CHARS.length)];
-  } while (char === prevChar);
-  return char;
+    char = RANDOM_CHARS[Math.floor(Math.random() * RANDOM_CHARS.length)]
+  } while (char === prevChar)
+  return char
 }
 
 export function SpecialText({
@@ -30,144 +30,144 @@ export function SpecialText({
   inView = false,
   once = true,
 }: SpecialTextProps) {
-  const containerRef = useRef<HTMLSpanElement>(null);
-  const isInView = useInView(containerRef, { once, margin: "-100px" });
-  const shouldAnimate = inView ? isInView : true;
-  const [hasStarted, setHasStarted] = useState(() => !inView && delay <= 0);
-  const text = children;
+  const containerRef = useRef<HTMLSpanElement>(null)
+  const isInView = useInView(containerRef, { once, margin: "-100px" })
+  const shouldAnimate = inView ? isInView : true
+  const [hasStarted, setHasStarted] = useState(() => !inView && delay <= 0)
+  const text = children
   const [displayText, setDisplayText] = useState<string>(
-    " ".repeat(text.length),
-  );
+    " ".repeat(text.length)
+  )
   const [currentPhase, setCurrentPhase] = useState<"phase1" | "phase2">(
-    "phase1",
-  );
-  const [animationStep, setAnimationStep] = useState<number>(0);
-  const intervalRef = useRef<NodeJS.Timeout | null>(null);
-  const startTimeoutRef = useRef<number | null>(null);
+    "phase1"
+  )
+  const [animationStep, setAnimationStep] = useState<number>(0)
+  const intervalRef = useRef<NodeJS.Timeout | null>(null)
+  const startTimeoutRef = useRef<number | null>(null)
 
-  function clearStartTimeout() {
-    if (startTimeoutRef.current === null) return;
-    window.clearTimeout(startTimeoutRef.current);
-    startTimeoutRef.current = null;
-  }
+  const clearStartTimeout = useCallback(() => {
+    if (startTimeoutRef.current === null) return
+    window.clearTimeout(startTimeoutRef.current)
+    startTimeoutRef.current = null
+  }, [])
 
-  function startAnimation() {
-    setHasStarted(true);
-    setDisplayText(" ".repeat(text.length));
-    setCurrentPhase("phase1");
-    setAnimationStep(0);
-  }
+  const startAnimation = useCallback(() => {
+    setHasStarted(true)
+    setDisplayText(" ".repeat(text.length))
+    setCurrentPhase("phase1")
+    setAnimationStep(0)
+  }, [text])
 
-  const runPhase1 = () => {
-    const maxSteps = text.length * 2;
-    const currentLength = Math.min(animationStep + 1, text.length);
+  const runPhase1 = useCallback(() => {
+    const maxSteps = text.length * 2
+    const currentLength = Math.min(animationStep + 1, text.length)
 
-    const chars: string[] = [];
+    const chars: string[] = []
     for (let i = 0; i < currentLength; i++) {
-      const prevChar = i > 0 ? chars[i - 1] : undefined;
-      chars.push(getRandomChar(prevChar));
+      const prevChar = i > 0 ? chars[i - 1] : undefined
+      chars.push(getRandomChar(prevChar))
     }
 
     for (let i = currentLength; i < text.length; i++) {
-      chars.push("\u00A0");
+      chars.push("\u00A0")
     }
 
-    setDisplayText(chars.join(""));
+    setDisplayText(chars.join(""))
 
     if (animationStep < maxSteps - 1) {
-      setAnimationStep((prev) => prev + 1);
+      setAnimationStep((prev) => prev + 1)
     } else {
-      setCurrentPhase("phase2");
-      setAnimationStep(0);
+      setCurrentPhase("phase2")
+      setAnimationStep(0)
     }
-  };
+  }, [text, animationStep])
 
-  const runPhase2 = () => {
-    const revealedCount = Math.floor(animationStep / 2);
-    const chars: string[] = [];
+  const runPhase2 = useCallback(() => {
+    const revealedCount = Math.floor(animationStep / 2)
+    const chars: string[] = []
 
     for (let i = 0; i < revealedCount && i < text.length; i++) {
-      chars.push(text[i]);
+      chars.push(text[i])
     }
 
     if (revealedCount < text.length) {
       if (animationStep % 2 === 0) {
-        chars.push("_");
+        chars.push("_")
       } else {
-        chars.push(getRandomChar());
+        chars.push(getRandomChar())
       }
     }
 
     for (let i = chars.length; i < text.length; i++) {
-      chars.push(getRandomChar());
+      chars.push(getRandomChar())
     }
 
-    setDisplayText(chars.join(""));
+    setDisplayText(chars.join(""))
 
     if (animationStep < text.length * 2 - 1) {
-      setAnimationStep((prev) => prev + 1);
+      setAnimationStep((prev) => prev + 1)
     } else {
-      setDisplayText(text);
+      setDisplayText(text)
       if (intervalRef.current) {
-        clearInterval(intervalRef.current);
-        intervalRef.current = null;
+        clearInterval(intervalRef.current)
+        intervalRef.current = null
       }
     }
-  };
+  }, [text, animationStep])
 
   useEffect(() => {
     if (shouldAnimate && !hasStarted) {
-      clearStartTimeout();
+      clearStartTimeout()
       if (delay <= 0) {
-        startAnimation();
-        return;
+        startAnimation()
+        return
       }
       startTimeoutRef.current = window.setTimeout(() => {
-        startTimeoutRef.current = null;
-        startAnimation();
-      }, delay * 1000);
+        startTimeoutRef.current = null
+        startAnimation()
+      }, delay * 1000)
     }
-    return () => clearStartTimeout();
-  }, [shouldAnimate, hasStarted, delay, text.length]);
+    return () => clearStartTimeout()
+  }, [shouldAnimate, hasStarted, delay, clearStartTimeout, startAnimation])
 
   useEffect(() => {
     if (!hasStarted) {
-      return;
+      return
     }
 
     if (intervalRef.current) {
-      clearInterval(intervalRef.current);
+      clearInterval(intervalRef.current)
     }
 
     intervalRef.current = setInterval(() => {
       if (currentPhase === "phase1") {
-        runPhase1();
+        runPhase1()
       } else {
-        runPhase2();
+        runPhase2()
       }
-    }, speed);
+    }, speed)
 
     return () => {
       if (intervalRef.current) {
-        clearInterval(intervalRef.current);
+        clearInterval(intervalRef.current)
       }
-    };
-  }, [currentPhase, animationStep, text, speed, hasStarted]);
+    }
+  }, [currentPhase, speed, hasStarted, runPhase2, runPhase1])
 
   useEffect(() => {
     if (hasStarted) {
-      setDisplayText(" ".repeat(text.length));
-      setCurrentPhase("phase1");
-      setAnimationStep(0);
+      setDisplayText(" ".repeat(text.length))
+      setCurrentPhase("phase1")
+      setAnimationStep(0)
     }
 
     return () => {
-      clearStartTimeout();
+      clearStartTimeout()
       if (intervalRef.current) {
-        clearInterval(intervalRef.current);
+        clearInterval(intervalRef.current)
       }
-    };
-  }, [text, hasStarted]);
+    }
+  }, [text, hasStarted, clearStartTimeout])
 
   return (
     <span
@@ -176,5 +176,5 @@ export function SpecialText({
     >
       {displayText}
     </span>
-  );
+  )
 }

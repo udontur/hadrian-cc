@@ -1,18 +1,18 @@
-"use client";
-import { useEffect, useId, useState } from "react";
-import { motion } from "motion/react";
-import * as opentype from "opentype.js";
+"use client"
+import { motion } from "motion/react"
+import * as opentype from "opentype.js"
+import { useEffect, useId, useState } from "react"
 
 interface SignatureProps {
-  text?: string;
-  color?: string;
-  fontSize?: number;
-  duration?: number;
-  delay?: number;
-  className?: string;
-  inView?: boolean;
-  once?: boolean;
-  height?: number;
+  text?: string
+  color?: string
+  fontSize?: number
+  duration?: number
+  delay?: number
+  className?: string
+  inView?: boolean
+  once?: boolean
+  height?: number
 }
 
 export function Signature({
@@ -26,52 +26,52 @@ export function Signature({
   once = true,
   height = 100,
 }: SignatureProps) {
-  const [paths, setPaths] = useState<string[]>([]);
-  const [width, setWidth] = useState<number>(300);
-  const horizontalPadding = fontSize * 0.1;
-  const topMargin = Math.max(5, (height - fontSize) / 2);
-  const baseline = Math.min(height - 5, topMargin + fontSize);
-  const maskId = `signature-reveal-${useId().replace(/:/g, "")}`;
+  const [paths, setPaths] = useState<string[]>([])
+  const [width, setWidth] = useState<number>(300)
+  const horizontalPadding = fontSize * 0.1
+  const topMargin = Math.max(5, (height - fontSize) / 2)
+  const baseline = Math.min(height - 5, topMargin + fontSize)
+  const maskId = `signature-reveal-${useId().replace(/:/g, "")}`
 
   useEffect(() => {
     async function load() {
       try {
         // Try multiple paths to ensure font loads correctly
-        const response = await fetch("/fonts/ShantellSans-Light.ttf");
-        const buffer = await response.arrayBuffer();
-        const font = opentype.parse(buffer);
+        const response = await fetch("/fonts/ShantellSans-Light.ttf")
+        const buffer = await response.arrayBuffer()
+        const font = opentype.parse(buffer)
 
         if (!font) {
-          throw new Error("Font could not be loaded from any path");
+          throw new Error("Font could not be loaded from any path")
         }
 
-        let x = horizontalPadding;
-        const newPaths: string[] = [];
+        let x = horizontalPadding
+        const newPaths: string[] = []
 
         for (const char of text) {
-          const glyph = font.charToGlyph(char);
-          const path = glyph.getPath(x, baseline, fontSize);
-          newPaths.push(path.toPathData(3));
+          const glyph = font.charToGlyph(char)
+          const path = glyph.getPath(x, baseline, fontSize)
+          newPaths.push(path.toPathData(3))
 
-          const advanceWidth = glyph.advanceWidth ?? font.unitsPerEm;
-          x += advanceWidth * (fontSize / font.unitsPerEm);
+          const advanceWidth = glyph.advanceWidth ?? font.unitsPerEm
+          x += advanceWidth * (fontSize / font.unitsPerEm)
         }
 
-        setPaths(newPaths);
-        setWidth(x + horizontalPadding);
+        setPaths(newPaths)
+        setWidth(x + horizontalPadding)
       } catch {
-        setPaths([]);
-        setWidth(text.length * fontSize * 0.6);
+        setPaths([])
+        setWidth(text.length * fontSize * 0.6)
       }
     }
 
-    load();
-  }, [text, fontSize, baseline, horizontalPadding]);
+    load()
+  }, [text, fontSize, baseline, horizontalPadding])
 
   const variants = {
     hidden: { pathLength: 0, opacity: 0 },
     visible: { pathLength: 1, opacity: 1 },
-  };
+  }
 
   return (
     <motion.svg
@@ -146,5 +146,5 @@ export function Signature({
         ))}
       </g>
     </motion.svg>
-  );
+  )
 }
