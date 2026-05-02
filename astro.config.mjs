@@ -1,13 +1,35 @@
 // @ts-check
+import { defineConfig, fontProviders } from 'astro/config';
+import tailwindcss from '@tailwindcss/vite';
 
-import tailwindcss from "@tailwindcss/vite"
-import { defineConfig } from "astro/config"
-import react from "@astrojs/react"
+import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
-  vite: {
-    plugins: [tailwindcss()],
+  experimental: {
+      fonts: [
+          {
+              provider: fontProviders.google(),
+              name: "Manrope",
+              cssVariable: "--font-manrope"
+          },
+          {
+              provider: fontProviders.google(),
+              name: "Shantell Sans",
+              cssVariable: "--font-shantell"
+          },
+          {
+              provider: fontProviders.google(),
+              name: "JetBrains Mono",
+              cssVariable: "--font-jetbrains"
+          }
+      ],
+      svgo: true
   },
-  integrations: [react()],
-})
+
+  vite: {
+      plugins: [tailwindcss()]
+  },
+
+  integrations: [react()]
+});
