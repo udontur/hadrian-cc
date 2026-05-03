@@ -1,15 +1,16 @@
-import { BlurReveal } from "@/components/ui/blur-reveal.tsx";
+import { SlideUpText } from "@/components/ui/slide-up-text.tsx"
 
 export function SectionHeader({ text }: { text: string }) {
   return (
     <div className="flex justify-center items-center">
-      <BlurReveal
-        className="text-5xl font-heading font-bold"
-        speedReveal={1.5}
+      <SlideUpText
+        className="text-5xl font-heading font-bold text-primary"
+        split="characters"
+        stagger={0.05}
         inView
       >
         {text}
-      </BlurReveal>
+      </SlideUpText>
     </div>
   )
 }
