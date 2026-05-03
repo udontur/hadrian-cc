@@ -37,7 +37,7 @@ export function Signature({
     async function load() {
       try {
         // Try multiple paths to ensure font loads correctly
-        const response = await fetch("/fonts/ShantellSans-Light.ttf")
+        const response = await fetch("/fonts/ShantellSans.ttf")
         const buffer = await response.arrayBuffer()
         const font = opentype.parse(buffer)
 
