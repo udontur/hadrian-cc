@@ -11,18 +11,23 @@ export default defineConfig({
       {
         provider: fontProviders.google(),
         name: "Manrope",
-        cssVariable: "--font-manrope",
+        cssVariable: "--font-sans",
       },
       {
         provider: fontProviders.google(),
         name: "Shantell Sans",
-        cssVariable: "--font-shantell",
+        cssVariable: "--font-heading",
       },
       {
         provider: fontProviders.google(),
-        name: "JetBrains Mono",
-        cssVariable: "--font-jetbrains",
+        name: "VT323",
+        cssVariable: "--font-mono",
       },
+      {
+        provider: fontProviders.google(),
+        name: "LXGW WenKai Mono TC",
+        cssVariable: "--font-chinese"
+      }
     ],
     svgo: true,
   },
