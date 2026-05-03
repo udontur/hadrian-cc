@@ -8,20 +8,20 @@ const linkData = [
   { tag: "#contact", text: "Contact" },
 ];
 ---
-<div class="flex">
-  <a href="#">
-    <button>
-      <div class="flex">
+<div class="flex justify-between border items-center max-w-300 w-full">
+  <a href="#" class="cursor-pointer flex items-center">
+    <button class="cursor-pointer">
+      <div class="flex gap-2 items-center text-primary">
         <UdonturLogo width={32} fill="#9ae600"/>
         Hadrian
       </div>
     </button>
   </a>
-  <li class="">
+  <li class="flex gap-8 items-center">
     {
       linkData.map((linkData)=>{
         return (
-        <ul>
+        <ul class="cursor-pointer text-zinc-400 hover:text-foreground ease-in-out duration-200">
           <a href={linkData.tag}>{linkData.text}</a>
         </ul>
         )
