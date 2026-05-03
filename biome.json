@@ -44,6 +44,13 @@
     }
   },
   "css": {
+    "formatter": {
+      "enabled": false,
+      "lineWidth": 80
+    },
+    "linter": {
+      "enabled": false
+    },
     "parser": {
       "tailwindDirectives": true
     }
