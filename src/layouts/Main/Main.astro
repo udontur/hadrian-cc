@@ -1,7 +1,11 @@
 ---
 import Landing from "./Landing.astro"
+import { SectionHeader } from "@/components/wrapper/SectionHeader.tsx";
+import { Divider } from "@/components/ui/divider.tsx";
 ---
 
 <div class="h-8"></div>
 <Landing />
-<div class="h-24"></div>
+<Divider/>
+<SectionHeader client:load text="About Me!" />
+<div class="h-256"></div>
