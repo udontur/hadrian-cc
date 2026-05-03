@@ -1,6 +1,8 @@
-export function Socials({ link, svg }: { link: string; svg: string }) {
+export function Socials({ link, svg, alt }: { link: string; svg: string, alt: string }) {
+  const iconPath = "icons/" + svg;
+
   return (
-    <a className="no-underline" href={link}>
+    <a className="no-underline text-white fill-white" href={link}>
       <button
         className="
           text-2xl flex items-center justify-center flex-row p-3
@@ -10,14 +12,7 @@ export function Socials({ link, svg }: { link: string; svg: string }) {
           hover:bg-secondary hover:border-primary
         "
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="48"
-          height="48"
-          viewBox="0 0 24 24"
-        >
-          <path fill="#fff" d={svg} />
-        </svg>
+        <img width="48" src={iconPath} alt={alt} className="invert-100 brightness-0"/>
       </button>
     </a>
   )
