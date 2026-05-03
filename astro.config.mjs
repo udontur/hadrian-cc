@@ -20,12 +20,12 @@ export default defineConfig({
       },
       {
         provider: fontProviders.google(),
-        name: "VT323",
+        name: "Jersey 15",
         cssVariable: "--font-mono",
       },
       {
         provider: fontProviders.google(),
-        name: "LXGW WenKai Mono TC",
+        name: "WDXL Lubrifont TC",
         cssVariable: "--font-chinese"
       }
     ],
