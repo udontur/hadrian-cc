@@ -1,32 +1,34 @@
 ---
-import UdonturLogo from "@/assets/icons/udontur-outline.svg";
+import UdonturLogo from "@/assets/icons/udontur-outline.svg"
+
 const linkData = [
   { tag: "#about", text: "About" },
   { tag: "#experience", text: "Experience" },
   { tag: "#contests", text: "Contests" },
   { tag: "#projects", text: "Projects" },
   { tag: "#contact", text: "Contact" },
-];
+]
 ---
+
 <!-- TODO: cannot blur some elements -->
-<div class="flex justify-between border border-t-transparent items-center max-w-310 w-full px-9 py-4.5 rounded-b-3xl rounded-bl-3xl backdrop-blur-sm">
+<div
+  class="flex justify-between border border-t-transparent items-center max-w-310 w-full px-9 py-4.5 rounded-b-3xl rounded-bl-3xl backdrop-blur-sm"
+>
   <a href="#" class="cursor-pointer flex items-center">
     <button class="cursor-pointer">
       <div class="flex gap-2 items-center text-primary">
-        <UdonturLogo width={32} fill="#9ae600"/>
+        <UdonturLogo width={32} fill="#9ae600" />
         Hadrian
       </div>
     </button>
   </a>
   <li class="flex gap-8 items-center">
-    {
-      linkData.map((linkData)=>{
+    {linkData.map((linkData)=>{
         return (
         <ul class="cursor-pointer text-zinc-400 hover:text-foreground ease-in-out duration-200">
           <a href={linkData.tag}>{linkData.text}</a>
         </ul>
         )
-      })
-    }
+      })}
   </li>
 </div>

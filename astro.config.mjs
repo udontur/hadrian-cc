@@ -26,8 +26,8 @@ export default defineConfig({
       {
         provider: fontProviders.google(),
         name: "WDXL Lubrifont TC",
-        cssVariable: "--font-chinese"
-      }
+        cssVariable: "--font-chinese",
+      },
     ],
     svgo: true,
   },
