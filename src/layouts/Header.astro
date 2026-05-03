@@ -1,1 +1,31 @@
-<div class="h-16 border border-cyan-700">GOOD AFTERNOON</div>
+---
+import UdonturLogo from "@/assets/icons/udontur-outline.svg";
+const linkData = [
+  { tag: "#about", text: "About" },
+  { tag: "#experience", text: "Experience" },
+  { tag: "#contests", text: "Contests" },
+  { tag: "#projects", text: "Projects" },
+  { tag: "#contact", text: "Contact" },
+];
+---
+<div>
+  <a href="#">
+    <button>
+      <div>
+        <UdonturLogo width={32} fill="#9ae600"/>
+        Hadrian
+      </div>
+    </button>
+  </a>
+  <li>
+    {
+      linkData.map((linkData)=>{
+        return (
+        <ul>
+          <a href={linkData.tag}>{linkData.text}</a>
+        </ul>
+        )
+      })
+    }
+  </li>
+</div>

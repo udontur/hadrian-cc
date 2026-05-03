@@ -1,9 +1,22 @@
 ---
 import { Socials } from "@/components/ui/socials.tsx"
+import socials from "@/data/socials.json"
 ---
 
 <div class="linktree">
-  <Socials
+  {
+    socials.map((social)=>{
+      return (
+        <Socials
+          alt={social.name}
+          link={social.url}
+          svg={social.svg}
+        />
+      )
+
+    })
+  }
+  <!-- <Socials
     link="https://www.reddit.com/user/UdonTur/"
     svg="M21 20.6q-.2 0-.375-.075T20.3 20.3L18 18H8q-.825 0-1.412-.587T6 16v-1h11q.825 0 1.413-.587T19 13V6h1q.825 0 1.413.588T22 8v11.575q0 .45-.3.738t-.7.287M4 12.175L5.175 11H15V4H4zM3 15.6q-.4 0-.7-.287t-.3-.738V4q0-.825.588-1.412T4 2h11q.825 0 1.413.588T17 4v7q0 .825-.587 1.413T15 13H6l-2.3 2.3q-.15.15-.325.225T3 15.6M4 11V4z"
   />
@@ -34,7 +47,7 @@ import { Socials } from "@/components/ui/socials.tsx"
   <Socials
     link="https://instagram.com/hadrian.cc"
     svg="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"
-  />
+  /> -->
 </div>
 
 <style>
