@@ -9,22 +9,22 @@ export default defineConfig({
   experimental: {
     fonts: [
       {
-        provider: fontProviders.google(),
+        provider: fontProviders.fontsource(),
         name: "Manrope",
         cssVariable: "--font-sans",
       },
       {
-        provider: fontProviders.google(),
+        provider: fontProviders.fontsource(),
         name: "Shantell Sans",
         cssVariable: "--font-heading",
       },
       {
-        provider: fontProviders.google(),
+        provider: fontProviders.fontsource(),
         name: "Jersey 15",
         cssVariable: "--font-mono",
       },
       {
-        provider: fontProviders.google(),
+        provider: fontProviders.fontsource(),
         name: "WDXL Lubrifont TC",
         cssVariable: "--font-chinese",
       },
