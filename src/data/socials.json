@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Discord",
+    "url": "https://discord.com/users/1356211729343709246",
+    "svg": "discord.svg"
+  },
+  {
+    "name": "Hack Club",
+    "url": "https://hackclub.enterprise.slack.com/team/U0823F7Q4QK",
+    "svg": "hackclub.svg"
+  },
+  {
+    "name": "Microblog",
+    "url": "https://bsky.app/profile/hadrian.cc",
+    "svg": "blog.svg"
+  },
+  {
+    "name": "Email",
+    "url": "#contact",
+    "svg": "email.svg"
+  },
+  {
+    "name": "GitHub",
+    "url": "https://github.com/udontur",
+    "svg": "github.svg"
+  },
+  {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/u/udontur",
+    "svg": "leetcode.svg"
+  },
+  {
+    "name": "LinkedIn",
+    "url": "https://www.linkedin.com/in/hadrianlau-udontur/",
+    "svg": "linkedin.svg "
+  },
+  {
+    "name": "Instagram",
+    "url": "https://instagram.com/udon.tur",
+    "svg": "instagram.svg"
+  }
+]

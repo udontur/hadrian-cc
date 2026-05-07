@@ -1,0 +1,17 @@
+---
+import { Socials } from "@/components/ui/socials.tsx"
+import socials from "@/data/socials.json"
+---
+
+<div class="flex flex-row justify-center gap-4 flex-wrap -mt-6 max-w-300">
+  {socials.map((social)=>{
+      return (
+        <Socials
+          alt={social.name}
+          link={social.url}
+          svg={social.svg}
+        />
+      )
+
+    })}
+</div>
