@@ -20,23 +20,25 @@
     "svg": "email.svg"
   },
   {
+    "name": "Meet with me",
+    "url": "https://cal.com/hadrianlau",
+    "svg": "meet.svg"
+  },
+  {
     "name": "GitHub",
     "url": "https://github.com/udontur",
     "svg": "github.svg"
   },
   {
+    "name": "WhatsApp",
+    "url": "https://wa.me/85292207430",
+    "svg": "whatsapp.svg"
+  },
+  {
     "name": "LeetCode",
     "url": "https://leetcode.com/u/udontur",
     "svg": "leetcode.svg"
-  },
-  {
-    "name": "LinkedIn",
-    "url": "https://www.linkedin.com/in/hadrianlau-udontur/",
-    "svg": "linkedin.svg "
-  },
-  {
-    "name": "Instagram",
-    "url": "https://instagram.com/udon.tur",
-    "svg": "instagram.svg"
   }
+
+
 ]
