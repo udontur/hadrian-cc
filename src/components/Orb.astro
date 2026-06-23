@@ -1,0 +1,28 @@
+---
+const { title, description, image } = Astro.props;
+import { Image } from "astro:assets";
+import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerDescription,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer"
+import { OrbDrawerContent } from "@/components/wrapper/OrbDrawerContent.tsx"
+---
+
+<Drawer client:load>
+    <DrawerTrigger asChild client:load>
+        <button>Wasgup gop</button>
+    </DrawerTrigger>
+    <DrawerContent client:load>
+        <OrbDrawerContent
+            title={title}
+            description={description}
+            image={image}
+        />
+    </DrawerContent>
+</Drawer>
