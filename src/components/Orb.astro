@@ -7,9 +7,9 @@ import { getImage } from "astro:assets"
 import type { ImageMetadata } from "astro"
 
 const images = import.meta.glob<{ default: ImageMetadata }>(
-    "/src/assets/image/*.{webp,png,jpg,jpeg,gif}"
+    "/src/assets/image/about/*.{webp,png,jpg,jpeg,gif}"
 )
-const imagePath = "/src/assets/image/" + image
+const imagePath = "/src/assets/image/about/" + image
 if (!images[imagePath]) throw new Error(`"${imagePath} gone bro"`)
 
 const orbImage1 = await getImage({

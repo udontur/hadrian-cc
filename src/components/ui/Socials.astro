@@ -5,9 +5,9 @@ import { getImage } from "astro:assets"
 import type { ImageMetadata } from "astro"
 
 const svgs = import.meta.glob<{ default: ImageMetadata }>(
-    "/src/assets/icons/*.svg"
+    "/src/assets/icons/linktree/*.svg"
 )
-const svgPath = "/src/assets/icons/" + svg
+const svgPath = "/src/assets/icons/linktree/" + svg
 if (!svgs[svgPath]) throw new Error(`"${svgPath} gone bro"`)
 
 const svgOpt = await getImage({
