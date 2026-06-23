@@ -1,8 +1,19 @@
 ---
-const { link, svg, alt } = Astro.props
+const { name, url, svg } = Astro.props
+
+const { image, title, description } = Astro.props
+
+import type {ImageMetadata} from "astro"
+import {getImage} from "astro:assets"
+
+const svgs=import.meta.glob<{default: ImageMetadata}>("/src/assets/icons/*.svg");
+const svgPath="/src/assets/icons/"+svg;
+if(!svgs[svgPath]) throw new Error(`"${svgPath} gone bro"`)
+
+const svgOpt=await getImage({src: svgs[svgPath](), format: "svg", width: 48, height: 48})
 ---
 
-<a class="no-underline text-white fill-white" href={link}>
+<a class="no-underline text-white fill-white" href={url}>
     <button
         class="
         text-2xl flex items-center justify-center flex-row p-3
@@ -13,7 +24,7 @@ const { link, svg, alt } = Astro.props
     "
     >
         <div class="invert-100 brightness-0">
-            <img width="48" src={"/icons/"+svg} alt={alt} />
+            <img src={svgOpt.src} alt={name} width=48 height=48 />
         </div>
     </button>
 </a>

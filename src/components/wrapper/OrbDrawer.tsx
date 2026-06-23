@@ -13,12 +13,12 @@ export function OrbDrawer({ title, description, coverImage, contentImage }: OrbD
         <Drawer>
             <DrawerTrigger asChild>
                 <button>
-                    <img src={coverImage.src} alt={title} width={coverImage.width} height={coverImage.height} />
+                    <img src={coverImage.src} alt={title} width={64} height={64} />
                 </button>
             </DrawerTrigger>
             <DrawerContent>
                 <div>
-                    <img src={contentImage.src} alt={title} width={coverImage.width} height={coverImage.height} />
+                    <img src={contentImage.src} alt={title} width={256} height={256} />
                     <div>
                         <div>{title}</div>
                         <div>{description}</div>
