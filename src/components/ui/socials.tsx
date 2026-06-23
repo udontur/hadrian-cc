@@ -9,16 +9,10 @@ export function Socials({
 }) {
   const iconPath = "icons/" + svg
 
-  function handleClick() {
-    // biome-ignore lint/suspicious/noExplicitAny: posthog is injected via inline script
-    ;(window as any).posthog?.capture("social_link_clicked", { platform: alt })
-  }
-
   return (
     <a
       className="no-underline text-white fill-white"
       href={link}
-      onClick={handleClick}
     >
       <button
         className="
