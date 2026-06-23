@@ -2,6 +2,17 @@
 import { OrbDrawer } from "@/components/wrapper/OrbDrawer.tsx"
 
 const { image, title, description } = Astro.props
+
+import orbImage from "../assets/image/icehockey.webp"
+import {getImage} from "astro:assets"
+
+const optOrbImage1 = await getImage({src: orbImage, format: "webp", width: 64, height: 64})
+const optOrbImage2 = await getImage({src: orbImage, format: "webp", width: 256, height: 256})
 ---
 
-<OrbDrawer client:load image={image} title={title} description={description} />
+<OrbDrawer client:load
+    coverImage={optOrbImage1}
+    contentImage={optOrbImage2}
+    title={title}
+    description={description}
+/>
