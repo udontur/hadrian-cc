@@ -6,20 +6,20 @@ import Main from "@/layouts/Main/Main.astro"
 ---
 
 <body class="min-h-screen flex flex-col">
-  <div class="fixed top-0 left-0 w-full h-full blur-3xl z-[-1]">
-    <BackgroundLayer />
-  </div>
-  <div class="mx-4">
-    <header class="sticky top-0 z-50 justify-center flex w-full">
-      <Header />
-    </header>
-    <div class="flex-1 flex flex-col sm:flex-row justify-center">
-      <main class="flex-1 max-w-300">
-        <Main />
-      </main>
+    <div class="fixed top-0 left-0 w-full h-full blur-3xl z-[-1]">
+        <BackgroundLayer />
     </div>
-    <footer>
-      <Footer />
-    </footer>
-  </div>
+    <div class="mx-4">
+        <header class="sticky top-0 z-50 justify-center flex w-full">
+            <Header />
+        </header>
+        <div class="flex-1 flex flex-col sm:flex-row justify-center">
+            <main class="flex-1 max-w-300">
+                <Main />
+            </main>
+        </div>
+        <footer>
+            <Footer />
+        </footer>
+    </div>
 </body>
