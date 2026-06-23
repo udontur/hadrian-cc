@@ -1,12 +1,12 @@
 ---
-import { SectionHeader } from "@/components/wrapper/SectionHeader.tsx"
 import Orb from "@/components/Orb.astro"
+import { SectionHeader } from "@/components/wrapper/SectionHeader.tsx"
 import orbs from "@/data/about.json"
 ---
 
 <SectionHeader client:load text="README.md Orbs" />
 <div class="grid grid-cols-5 gap-4">
-    {orbs.map((orb)=>{
+  {orbs.map((orb)=>{
         if(orb.type==="blank"){
             return (
                 <div></div>
@@ -14,8 +14,8 @@ import orbs from "@/data/about.json"
         }else{
             return (
                 <Orb
-                    title={orb.title},
-                    description={orb.description},
+                    title={orb.title}
+                    description={orb.description}
                     image={orb.image}
                 />
             )

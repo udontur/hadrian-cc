@@ -1,11 +1,9 @@
 ---
 const { link, svg, alt } = Astro.props
 ---
-<a
-    class="no-underline text-white fill-white"
-    href={link}
->
-    <button
+
+<a class="no-underline text-white fill-white" href={link}>
+  <button
     class="
         text-2xl flex items-center justify-center flex-row p-3
         border border-solid rounded-[16px] border-border
@@ -13,9 +11,9 @@ const { link, svg, alt } = Astro.props
         bg-card cursor-pointer no-underline gap-4
         hover:bg-secondary hover:border-primary
     "
-    >
+  >
     <div class="invert-100 brightness-0">
-        <img width="48" src={"/icons/"+svg} alt={alt} />
+      <img width="48" src={"/icons/"+svg} alt={alt} />
     </div>
-    </button>
+  </button>
 </a>
