@@ -1,33 +1,8 @@
 import { BlurReveal } from "@/components/ui/blur-reveal.tsx"
-import { Signature } from "@/components/ui/signature.tsx"
 import { SpecialText } from "@/components/ui/special-text.tsx"
 
-export function SignatureName({
-    text,
-    size,
-    color,
-    duration,
-}: {
-    text: string
-    size: number
-    color: string
-    duration: number
-}) {
-    return (
-        <div>
-            <Signature
-                text={text}
-                fontSize={size}
-                color={color}
-                duration={duration}
-                height={size}
-                inView
-            />
-        </div>
-    )
-}
 
-export function SecondName({
+export function Name({
     text,
     className = "",
     speed,
