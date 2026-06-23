@@ -1,5 +1,5 @@
-import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer"
 import type { GetImageResult } from "astro"
+import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer"
 
 interface OrbDrawerProps {
     title: string
@@ -8,17 +8,32 @@ interface OrbDrawerProps {
     contentImage: GetImageResult
 }
 
-export function OrbDrawer({ title, description, coverImage, contentImage }: OrbDrawerProps) {
+export function OrbDrawer({
+    title,
+    description,
+    coverImage,
+    contentImage,
+}: OrbDrawerProps) {
     return (
         <Drawer>
             <DrawerTrigger asChild>
                 <button>
-                    <img src={coverImage.src} alt={title} width={64} height={64} />
+                    <img
+                        src={coverImage.src}
+                        alt={title}
+                        width={64}
+                        height={64}
+                    />
                 </button>
             </DrawerTrigger>
             <DrawerContent>
                 <div>
-                    <img src={contentImage.src} alt={title} width={256} height={256} />
+                    <img
+                        src={contentImage.src}
+                        alt={title}
+                        width={256}
+                        height={256}
+                    />
                     <div>
                         <div>{title}</div>
                         <div>{description}</div>

@@ -3,18 +3,31 @@ import { OrbDrawer } from "@/components/wrapper/OrbDrawer.tsx"
 
 const { image, title, description } = Astro.props
 
-import type {ImageMetadata} from "astro";
-import {getImage} from "astro:assets"
+import { getImage } from "astro:assets"
+import type { ImageMetadata } from "astro"
 
-const images=import.meta.glob<{default: ImageMetadata}>("/src/assets/image/*.{webp,png,jpg,jpeg,gif}");
-const imagePath="/src/assets/image/"+image;
-if(!images[imagePath]) throw new Error(`"${imagePath} gone bro"`)
+const images = import.meta.glob<{ default: ImageMetadata }>(
+    "/src/assets/image/*.{webp,png,jpg,jpeg,gif}"
+)
+const imagePath = "/src/assets/image/" + image
+if (!images[imagePath]) throw new Error(`"${imagePath} gone bro"`)
 
-const orbImage1 = await getImage({src: images[imagePath](), format: "webp", width: 64, height: 64})
-const orbImage2 = await getImage({src: images[imagePath](), format: "webp", width: 256, height: 256})
+const orbImage1 = await getImage({
+    src: images[imagePath](),
+    format: "webp",
+    width: 64,
+    height: 64,
+})
+const orbImage2 = await getImage({
+    src: images[imagePath](),
+    format: "webp",
+    width: 256,
+    height: 256,
+})
 ---
 
-<OrbDrawer client:load
+<OrbDrawer
+    client:load
     coverImage={orbImage1}
     contentImage={orbImage2}
     title={title}
