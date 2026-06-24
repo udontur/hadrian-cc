@@ -8,7 +8,7 @@ interface NameProps {
 export function Name({ text, className = "" }: NameProps) {
     return (
         <div>
-            <BlurReveal className={className} speedReveal={0.2} inView>
+            <BlurReveal className={className} speedReveal={0.1} inView>
                 {text}
             </BlurReveal>
         </div>
