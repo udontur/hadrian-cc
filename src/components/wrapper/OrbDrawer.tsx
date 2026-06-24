@@ -1,5 +1,9 @@
 import type { GetImageResult } from "astro"
-import { Drawer, DrawerContent, DrawerTrigger } from "@/components/shadcn/drawer"
+import {
+    Drawer,
+    DrawerContent,
+    DrawerTrigger,
+} from "@/components/shadcn/drawer"
 
 interface OrbDrawerProps {
     title: string
@@ -17,14 +21,16 @@ export function OrbDrawer({
     return (
         <Drawer>
             <DrawerTrigger asChild className="flex items-center">
-                <button className="
+                <button
+                    className="
                         flex items-center justify-center p-1
                         w-fit cursor-pointer
                         border-solid border-2 border-primary/55 rounded-full
                         hover:border-primary
                         hover:scale-110
                         ease-in-out duration-250
-                        ">
+                        "
+                >
                     <div className="relative overflow-hidden rounded-full">
                         <img
                             src={coverImage.src}
@@ -39,7 +45,6 @@ export function OrbDrawer({
                             className="pointer-events-none absolute inset-0 rounded-full shadow-[inset_0_0_8px_rgb(0_0_0_/0.55)]"
                         />
                     </div>
-
                 </button>
             </DrawerTrigger>
             <DrawerContent className="flex items-center">
@@ -59,7 +64,9 @@ export function OrbDrawer({
                         />
                     </div>
                     <div className="flex flex-col gap-4 mt-2">
-                        <div className="font-heading text-4xl underline decoration-primary decoration-wavy font-bold">{title}</div>
+                        <div className="font-heading text-4xl underline decoration-primary decoration-wavy font-bold">
+                            {title}
+                        </div>
                         <div>{description}</div>
                     </div>
                 </div>

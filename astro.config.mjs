@@ -16,7 +16,7 @@ export default defineConfig({
             provider: fontProviders.fontsource(),
             name: "Shantell Sans",
             cssVariable: "--font-heading",
-        }
+        },
     ],
 
     integrations: [react()],

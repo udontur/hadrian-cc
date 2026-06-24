@@ -59,8 +59,4 @@ function DrawerContent({
     )
 }
 
-export {
-    Drawer,
-    DrawerContent,
-    DrawerTrigger,
-}
+export { Drawer, DrawerContent, DrawerTrigger }

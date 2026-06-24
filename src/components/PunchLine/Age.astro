@@ -11,42 +11,47 @@
     const BIRTHDAY_STAMP = 1246060800000
     const YEAR_STAMP = 31557600000
     const DECIMAL_PLACES = 10
-    const ageElement = document.getElementById("age-ticker");
-    if(ageElement){
-        let rafId=0
-        let lastStamp=0
+    const ageElement = document.getElementById("age-ticker")
+    if (ageElement) {
+        let rafId = 0
+        let lastStamp = 0
         const tick = (currentStamp) => {
             rafId = requestAnimationFrame(tick)
-            if(currentStamp-lastStamp<RATE_LIMIT) return
+            if (currentStamp - lastStamp < RATE_LIMIT) return
 
-            lastStamp=currentStamp
-            ageElement.textContent=((Date.now()-BIRTHDAY_STAMP)/YEAR_STAMP).toFixed(DECIMAL_PLACES)
+            lastStamp = currentStamp
+            ageElement.textContent = (
+                (Date.now() - BIRTHDAY_STAMP) /
+                YEAR_STAMP
+            ).toFixed(DECIMAL_PLACES)
         }
-        const startTick = ()=>{
-            if(!rafId){
-                rafId=requestAnimationFrame(tick)
+        const startTick = () => {
+            if (!rafId) {
+                rafId = requestAnimationFrame(tick)
             }
         }
-        const stopTick = ()=>{
-            if(rafId){
+        const stopTick = () => {
+            if (rafId) {
                 cancelAnimationFrame(rafId)
-                rafId=0
+                rafId = 0
             }
         }
-        new IntersectionObserver(([currentElement])=>{
-                if(currentElement.isIntersecting){
+        new IntersectionObserver(
+            ([currentElement]) => {
+                if (currentElement.isIntersecting) {
                     startTick()
-                }else{
+                } else {
                     stopTick()
                 }
-            },{
+            },
+            {
                 threshold: 0,
             }
         ).observe(ageElement)
-        document.addEventListener("visibilitychange", ()=>{
-            if(document.hidden){
+        document.addEventListener("visibilitychange", () => {
+            if (document.hidden) {
                 stopTick()
-            }else{
+            } else {
                 startTick()
             }
         })

@@ -5,10 +5,7 @@ interface NameProps {
     className: string
 }
 
-export function Name({
-    text,
-    className = "",
-}: NameProps ) {
+export function Name({ text, className = "" }: NameProps) {
     return (
         <div>
             <BlurReveal className={className} speedReveal={0.2} inView>
