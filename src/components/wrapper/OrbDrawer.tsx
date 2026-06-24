@@ -1,5 +1,5 @@
 import type { GetImageResult } from "astro"
-import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer"
+import { Drawer, DrawerContent, DrawerTrigger } from "@/components/shadcn/drawer"
 
 interface OrbDrawerProps {
     title: string

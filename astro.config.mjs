@@ -16,12 +16,7 @@ export default defineConfig({
             provider: fontProviders.fontsource(),
             name: "Shantell Sans",
             cssVariable: "--font-heading",
-        },
-        {
-            provider: fontProviders.fontsource(),
-            name: "Jersey 15",
-            cssVariable: "--font-mono",
-        },
+        }
     ],
 
     integrations: [react()],

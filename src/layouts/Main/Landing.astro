@@ -1,11 +1,9 @@
 ---
 import { Image } from "astro:assets"
 import udontur from "@/assets/image/landing/udontur1000-transparent-blur.png"
-import {
-    Name,
-    UserNameFlash,
-} from "@/components/wrapper/HeroText.tsx"
-import Linktree from "./Linktree.astro"
+import {Name} from "@/components/wrapper/HeroText.tsx"
+import Socials from "@/components/Socials.astro"
+import socials from "@/data/socials.json"
 ---
 
 <div class="flex flex-col gap-96">
@@ -13,7 +11,6 @@ import Linktree from "./Linktree.astro"
         <div class="-translate-x-2 -mb-8">
             <Name
                 client:load
-                speed={0.25}
                 className="text-[8rem] font-bold text-primary font-heading"
                 text="Hadrian"
             />
@@ -22,22 +19,14 @@ import Linktree from "./Linktree.astro"
             <div class="mb-2 flex">
                 <Name
                     client:load
-                    speed={0.25}
                     className="text-5xl font-bold"
-                    text="Lau "
-                />
-                <Name
-                    client:load
-                    speed={0.25}
-                    className="text-5xl"
-                    text="劉曜熙"
+                    text="Lau 劉曜熙"
                 />
             </div>
             <div>
-                <UserNameFlash
+                <Name
                     client:load
-                    speed={42}
-                    className="text-[54px] text-muted-foreground"
+                    className="text-5xl -mt-2 text-muted-foreground"
                     text="@udontur"
                 />
             </div>
@@ -46,6 +35,16 @@ import Linktree from "./Linktree.astro"
     <!-- This blur thingy took so long to fix!!!  -->
     <div class="flex flex-col items-center gap-0">
         <Image src={udontur} alt="avatar" width="512" />
-        <Linktree />
+        <div class="flex flex-row justify-center gap-4 flex-wrap -mt-6 max-w-300">
+            {socials.map((social)=>{
+              return (
+                <Socials
+                  name={social.name}
+                  url={social.url}
+                  svg={social.svg}
+                />
+              )
+            })}
+        </div>
     </div>
 </div>

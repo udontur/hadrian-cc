@@ -1,4 +1,4 @@
-import { SlideUpText } from "@/components/ui/slide-up-text.tsx"
+import { SlideUpText } from "@/components/shadcn/slide-up-text.tsx"
 
 export function SectionHeader({ text }: { text: string }) {
     return (
