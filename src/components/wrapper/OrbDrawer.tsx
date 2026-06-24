@@ -16,14 +16,22 @@ export function OrbDrawer({
 }: OrbDrawerProps) {
     return (
         <Drawer>
-            <DrawerTrigger asChild>
-                <button className="cursor-pointer">
+            <DrawerTrigger asChild className="flex items-center">
+                <button className="
+                        flex items-center justify-center p-1
+                        w-fit cursor-pointer
+                        border-solid border-2 border-primary/55 rounded-full
+                        hover:border-primary
+                        hover:scale-110
+                        ease-in-out duration-250
+                        ">
                     <img
                         src={coverImage.src}
                         alt={title}
-                        className="rounded-full border-solid"
-                        width={64}
-                        height={64}
+                        className="rounded-full inset-shadow-sm inset-shadow-primary"
+                        width={78}
+                        height={78}
+                        loading="lazy"
                     />
                 </button>
             </DrawerTrigger>
@@ -35,6 +43,7 @@ export function OrbDrawer({
                             className="rounded-2xl border-solid border-2 border-primary inset-shadow-2xl inset-shadow-primary"
                         width={256}
                         height={256}
+                        loading="lazy"
                     />
                     <div className="flex flex-col gap-4 mt-2">
                         <div className="font-heading text-4xl underline decoration-primary decoration-wavy font-bold">{title}</div>
