@@ -4,7 +4,7 @@ import { SectionHeader } from "@/components/wrapper/SectionHeader.tsx"
 import orbs from "@/data/about.json"
 ---
 
-<SectionHeader client:load text="README.md Orbs" />
+<SectionHeader client:visible text="README.md Orbs" />
 <div class="grid grid-cols-5 gap-4">
     {orbs.map((orb)=>{
         if(orb.type==="blank"){

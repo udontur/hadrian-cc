@@ -21,13 +21,13 @@ const linkData = [
             </div>
         </button>
     </a>
-    <li class="flex gap-8 items-center">
+    <ul class="flex gap-8 items-center">
         {linkData.map((linkData)=>{
         return (
-        <ul class="cursor-pointer text-zinc-400 hover:text-foreground ease-in-out duration-200">
+        <li class="cursor-pointer text-zinc-400 hover:text-foreground ease-in-out duration-200">
           <a href={linkData.tag}>{linkData.text}</a>
-        </ul>
+        </li>
         )
       })}
-    </li>
+    </ul>
 </div>
