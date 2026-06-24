@@ -1,0 +1,54 @@
+<div class="my-64">
+    <div class="text-center">
+        Have been on the Earth for
+        <span id="age-ticker" class="tabular-nums text-2xl font-bold"></span>
+        years, it's a little to fast!
+    </div>
+</div>
+
+<script is:inline>
+    const RATE_LIMIT = 35
+    const BIRTHDAY_STAMP = 1246060800000
+    const YEAR_STAMP = 31557600000
+    const DECIMAL_PLACES = 10
+    const ageElement = document.getElementById("age-ticker");
+    if(ageElement){
+        let rafId=0
+        let lastStamp=0
+        const tick = (currentStamp) => {
+            rafId = requestAnimationFrame(tick)
+            if(currentStamp-lastStamp<RATE_LIMIT) return
+
+            lastStamp=currentStamp
+            ageElement.textContent=((Date.now()-BIRTHDAY_STAMP)/YEAR_STAMP).toFixed(DECIMAL_PLACES)
+        }
+        const startTick = ()=>{
+            if(!rafId){
+                rafId=requestAnimationFrame(tick)
+            }
+        }
+        const stopTick = ()=>{
+            if(rafId){
+                cancelAnimationFrame(rafId)
+                rafId=0
+            }
+        }
+        new IntersectionObserver(([currentElement])=>{
+                if(currentElement.isIntersecting){
+                    startTick()
+                }else{
+                    stopTick()
+                }
+            },{
+                threshold: 0,
+            }
+        ).observe(ageElement)
+        document.addEventListener("visibilitychange", ()=>{
+            if(document.hidden){
+                stopTick()
+            }else{
+                startTick()
+            }
+        })
+    }
+</script>
