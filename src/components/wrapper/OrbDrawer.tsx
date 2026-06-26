@@ -36,8 +36,8 @@ export function OrbDrawer({
                             src={coverImage.src}
                             alt={title}
                             className="block rounded-full"
-                            width={78}
-                            height={78}
+                            width={84}
+                            height={84}
                             loading="lazy"
                         />
                         <div

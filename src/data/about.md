@@ -6,7 +6,7 @@ Software Dev
 - Nice and optimized static sites
 - Apps that are useful to me and optmized
 
-Customization and linux
+Customization and Linux
 - Obsessed with customization
 - From hockey gear to PC specs
 - Poked around hundreds of websites and stores to build what i feel like that day
@@ -28,9 +28,8 @@ Doing random stuff
 - Hope to meet more people 
 - Aspiring startup founder
 
-Education
-
 Other things I enjoy (One orb)
+- Education
 - Cooking & Eating
 - Documentries and how things work
 - More
