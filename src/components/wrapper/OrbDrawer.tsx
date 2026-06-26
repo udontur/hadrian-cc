@@ -60,7 +60,7 @@ export function OrbDrawer({
                         />
                         <div
                             aria-hidden="true"
-                            className="pointer-events-none absolute inset-0 rounded-2xl shadow-[inset_0_0_36px_rgb(0_0_0_/_0.5)]"
+                            className="pointer-events-none absolute inset-0 rounded-2xl shadow-[inset_0_0_36px_rgb(0_0_0_/0.5)]"
                         />
                     </div>
                     <div className="flex flex-col gap-4 mt-2">

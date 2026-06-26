@@ -5,8 +5,14 @@ import orbs from "@/data/about.json"
 ---
 
 <SectionHeader client:visible text="README.md Orbs" />
-<div class="grid grid-cols-5 gap-4">
+<div class="grid grid-cols-5 gap-x-0 gap-y-16 mt-12">
     {orbs.map((orb)=>{
+        var css=""
+        if(orb.place===2){
+            css="justify-center"
+        }else if(orb.place===3){
+            css="justify-end"
+        }
         if(orb.type==="blank"){
             return (
                 <div></div>
@@ -17,6 +23,7 @@ import orbs from "@/data/about.json"
                     title={orb.title}
                     description={orb.description}
                     image={orb.image}
+                    place={css}
                 />
             )
         }

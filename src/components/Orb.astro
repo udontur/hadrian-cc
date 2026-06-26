@@ -1,7 +1,7 @@
 ---
 import { OrbDrawer } from "@/components/wrapper/OrbDrawer.tsx"
 
-const { image, title, description } = Astro.props
+const { image, title, description, place } = Astro.props
 
 import { getImage } from "astro:assets"
 import type { ImageMetadata } from "astro"
@@ -25,11 +25,12 @@ const orbImage2 = await getImage({
     height: 256,
 })
 ---
-
-<OrbDrawer
-    client:visible
-    coverImage={orbImage1}
-    contentImage={orbImage2}
-    title={title}
-    description={description}
-/>
+<div class={`flex ${place}`}>
+    <OrbDrawer
+        client:visible
+        coverImage={orbImage1}
+        contentImage={orbImage2}
+        title={title}
+        description={description}
+    />
+</div>
