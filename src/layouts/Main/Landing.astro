@@ -1,58 +1,29 @@
 ---
-import { Image } from "astro:assets"
-import udontur from "@/assets/image/landing/udontur1000-transparent-blur.png"
-import Socials from "@/components/Socials.astro"
 import { Name } from "@/components/wrapper/HeroText.tsx"
-import socials from "@/data/socials.json"
 ---
 
-<div class="flex flex-col gap-96">
-    <div class="flex max-w-md min-w-0 flex-col">
-        <div class="-translate-x-2 -mb-8">
+<div class="flex max-w-md min-w-0 flex-col">
+    <div class="-translate-x-2 -mb-8">
+        <Name
+            client:visible
+            className="text-[8rem] font-bold text-primary font-heading"
+            text="Hadrian"
+        />
+    </div>
+    <div class="flex flex-col gap-1">
+        <div class="mb-2 flex">
             <Name
                 client:visible
-                className="text-[8rem] font-bold text-primary font-heading"
-                text="Hadrian"
+                className="text-5xl font-bold"
+                text="Lau 劉曜熙"
             />
         </div>
-        <div class="flex flex-col gap-1">
-            <div class="mb-2 flex">
-                <Name
-                    client:visible
-                    className="text-5xl font-bold"
-                    text="Lau 劉曜熙"
-                />
-            </div>
-            <div>
-                <Name
-                    client:visible
-                    className="text-5xl -mt-2 text-muted-foreground"
-                    text="@udontur"
-                />
-            </div>
-        </div>
-    </div>
-    <!-- This blur thingy took so long to fix!!!  -->
-    <div class="flex flex-col items-center gap-0">
-        <Image
-            src={udontur}
-            alt="avatar"
-            width="512"
-            format="webp"
-            loading="eager"
-        />
-        <div
-            class="flex flex-row justify-center gap-4 flex-wrap -mt-6 max-w-300"
-        >
-            {socials.map((social)=>{
-              return (
-                <Socials
-                  name={social.name}
-                  url={social.url}
-                  svg={social.svg}
-                />
-              )
-            })}
+        <div>
+            <Name
+                client:visible
+                className="text-5xl -mt-2 text-muted-foreground"
+                text="@udontur"
+            />
         </div>
     </div>
 </div>

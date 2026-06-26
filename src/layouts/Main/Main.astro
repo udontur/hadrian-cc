@@ -1,13 +1,19 @@
 ---
-import Age from "@/components/PunchLine/Age.astro"
-import ThankPeople from "@/components/PunchLine/ThankPeople.astro"
-import About from "./About.astro"
 import Landing from "./Landing.astro"
+import Linktree from "./Linktree.astro"
+import About from "./About.astro"
+import Experience from "./Experience.astro"
+
+import PunchLine1 from "@/components/PunchLine/ThankPeople.astro"
+import PunchLine2 from "@/components/PunchLine/Age.astro"
 ---
 
 <div class="h-8"></div>
 <Landing />
+<div class="h-96"></div>
+<Linktree/>
 <!-- <Divider /> -->
-<ThankPeople />
+<PunchLine1 />
 <About />
-<Age />
+<PunchLine2 />
+<Experience/>
