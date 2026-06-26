@@ -1,11 +1,34 @@
-Software Dev (and what am I interested in it, obsessed with making things nice, optimized, and useful)
+Software Dev 
+- Making it nice
+- Making it fast
+- Making it useful
+- Hack Club
+- Nice and optimized static sites
+- Apps that are useful to me and optmized
+
 Customization and linux
+- Obsessed with customization
+- From hockey gear to PC specs
+- Poked around hundreds of websites and stores to build what i feel like that day
+- Daily driving Linux since late 2024
+- Arch, NixOS, fedora, debian based
+
 Ice hockey
+- Play 1-2 times a week recreationally
+- Playing since early 2026
+- Thrilled by the speed, contact, skill, and team work about the game
+
 CP & Math & Hackathon
-Working with others (like comeau and intern)
-Entreprenurial stuff (change name, like hackathons, startups, aspiring startup founder)
+- Currently joining LeetCode weekly contest weekly, some CP competitions like CCC and HKSSCC
+
+Doing random stuff
+- Interns
+- Organizing hackathons
+- Hosting workshops
+- Hope to meet more people 
+- Aspiring startup founder
+
 Education
-Hack Club
 
 Other things I enjoy (One orb)
 - Cooking & Eating
