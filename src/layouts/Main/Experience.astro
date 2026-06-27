@@ -1,5 +1,9 @@
 ---
 import { SectionHeader } from "@/components/wrapper/SectionHeader.tsx"
+import { Collapse } from "@/components/ui/collapse.tsx"
+
+import workData from "@/data/work.json"
 ---
 
 <SectionHeader client:visible text="XP Points" />
+<Collapse data={workData}/>
